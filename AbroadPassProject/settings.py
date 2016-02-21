@@ -80,7 +80,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'abroadpass',
-        'USER':'user',
+        'USER':'apuser',
         'PASSWORD':'password',
     }
 }
