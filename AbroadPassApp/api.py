@@ -24,13 +24,16 @@ class UserResource(ModelResource):
         queryset = User.objects.all()
         resource_name = 'user'
         fields = {'username','email'}
-        allowed_method =['get','post']
+        allowed_method =['get','post','put','patch']
+        authentication = SessionAuthentication()
+        authorization = Authorization()
 
     def override_urls(self):
         return [
             url(r"(?P<resource_name>%s)/login%s$"%(self._meta.resource_name,trailing_slash()),self.wrap_view('login'),name="api_login"),
             url(r"(?P<resource_name>%s)/logout%s$"%(self._meta.resource_name,trailing_slash()),self.wrap_view('logout'),name="api_logout"),
             url(r"(?P<resource_name>%s)/register%s$"%(self._meta.resource_name,trailing_slash()),self.wrap_view('register'),name="api_register"),
+            url(r"(?P<resource_name>%s)/changepassword%s$"%(self._meta.resource_name,trailing_slash()),self.wrap_view('changepassword'),name="api_changepassword"),
         ]
 
     def register(self, request, **kwargs):
@@ -40,16 +43,23 @@ class UserResource(ModelResource):
         username = data.get('username','')
         password = data.get('password','')
 
+        if User.objects.filter(username=username).exists():
+            return self.create_response(request,{'success':False,'reason':'Username Existed!',},HttpForbidden)
+
         new_user = User.objects.create_user(username=username, email=username, password=password)
         new_user.save()
 
-        return self.create_response(request,{'Create_success':True})
+        return self.create_response(request,{'success':True})
 
     def login(self,request,**kwargs):
         self.method_check(request,allowed=['post'])
         data = self.deserialize(request,request.body,format=request.META.get('CONTENT_TYPE','application/json'))
         username = data.get('username','')
         password = data.get('password','')
+
+        if not User.objects.filter(username=username).exists():
+            return self.create_response(request,{'success':False,'reason':'User Not Existed!',},HttpForbidden)
+
         user = authenticate(username=username,password=password)
         if user:
             if user.is_active:
@@ -69,19 +79,60 @@ class UserResource(ModelResource):
         else:
             return self.create_response(request,{'success':False},HttpUnauthorized)
 
+    def changepassword(self,request,**kwargs):
+        self.method_check(request,allowed=['post'])
+        data = self.deserialize(request,request.body,format=request.META.get('CONTENT_TYPE','application/json'))
+        oldpassword = data.get('oldpassword','')
+        newpassword = data.get('newpassword','')
+
+        #if request.user.check_password(oldpassword):
+        user = authenticate(username=request.user.username, password=oldpassword)
+        if user is not None and user.is_active:
+            if request.user.check_password(oldpassword):
+                user.set_password(newpassword)
+                user.save()
+                return self.create_response(request,{'success': True,'reason':"Change Password Success!"},HttpForbidden)
+            else:
+                return self.create_response(request,{'success':False,'reason':'Incorrect Password!'},HttpForbidden)
+        else:
+            return self.create_response(request,{'success':user.id,'reason':'Time out! Login again please!'},HttpForbidden)
+
 class UserProfileResource(ModelResource):
-
-    # user = fields.ToOneField(UserResource,attribute='user',related_name='userprofile')
-
-    # def hydrate(self, bundle):
-    #     bundle.obj.user = User.objects.get(id=14)
-    #     return bundle
 
     class Meta:
         queryset = UserProfile.objects.all()
         resource_name ='userprofile'
         authorization = ProfileAuthorization()
         authentication = SessionAuthentication()
+        allowed_method =['get','post','put','patch']
+
+    def prepend_urls(self):
+        return [
+            url(r"(?P<resource_name>%s)/show%s$"%(self._meta.resource_name,trailing_slash()),self.wrap_view('current_user'),name="api_showprofile"),
+            url(r"(?P<resource_name>%s)/edit%s$"%(self._meta.resource_name,trailing_slash()),self.wrap_view('editprofile'),name="api_editprofile"),
+        ]
+
+    def editprofile(self,request, **kwargs):
+        
+        self.method_check(request,allowed=['post'])
+        data = self.deserialize(request,request.body,format=request.META.get('CONTENT_TYPE','application/json'))
+        mobile = data.get('mobile','')
+
+        user = request.user
+        profile = UserProfile.objects.get(user_id = user.id)
+        profile.mobile = mobile
+        profile.save()
+        return self.create_response(request,{'success':user.id,'reason':'OK'},HttpForbidden)
+        return self.obj_update(request,pk=15)
+
+    def current_user(self,request,**kwargs):
+        user = request.user
+        profile = UserProfile.objects.get(user_id = user.id)
+        #return self.create_response(request,{'success':user.id,'reason':self.Meta.uid},HttpForbidden)
+        #return self.create_response(request,{'success':user.id,'reason':user.is_anonymous()},HttpForbidden)
+        if user and not user.is_anonymous():
+            return self.dispatch_detail(request,pk = profile.id)
+
 
     # def obj_create(self, bundle, **kwargs):
     #     #user = User.objects.get(pk=14)
@@ -92,7 +143,8 @@ class ProfileAuthorization(Authorization):
     def read_list(self, object_list, bundle):
         return object_list.filter(user=bundle.request.user)
 
-
+    def update_detail(self, object_list, bundle):
+        return bundle.obj.user == bundle.request.user
 
 
 

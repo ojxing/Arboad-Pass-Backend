@@ -6,22 +6,28 @@
         Method:POST
         Url:   http://localhost:8000/api/v1/user/register/
         Body:  {'username':'name','password':'password'}
-        Response: {'Create_success':True}
+        Response: {'success':bool_result,'reason':'if error occur,show error'}
 
   1.2.2 Login
         Method:POST
         Url:   http://localhost:8000/api/v1/user/login/
         Body:  {'username':'name','password':'password'}
-        Response: {'success':True,'api':api-key}
+        Response: {'success':bool_result,'api':api-key,'reason':'if error occur,show error'}
 
   1.2.3 Logout
         Method:GET
         Url:   http://localhost:8000/api/v1/user/logout/
-        Response: {'Create_success':True}
+        Response: {'success':bool_result}
+
+  1.2.4 Changepassword
+        Method:POST
+        Url:   http://localhost:8000/api/v1/user/changepassword/
+        Body： {'oldpassword':'oldpassword','newpassword':'newpassword'}
+        Response:{'success': bool_result ,'reason':'if error occur,show error'}
 
 1.3 Data
   1.3.1 userprofile
         Method:GET
-        Url:   http://localhost:8000/api/v1/userprofile/
+        Url:   http://localhost:8000/api/v1/userprofile/show/
         Cookies:"sessionid","csrftoken"
-        Response:
+        Response: UserProfileResource with corresponding user
