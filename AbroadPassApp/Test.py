@@ -5,7 +5,7 @@ import json
 
 #---------login---------#
 login = 'http://localhost:8000/api/v1/user/login/'
-data1 = {'username':'ojx1','password':'ojx9103123'}
+data1 = {'username':'ojxing1','password':'newpass'}
 head = {'Content-type':'application/json'}
 r1 = requests.post(login,json.dumps(data1),headers=head)
 print(r1.status_code)
@@ -17,7 +17,7 @@ print(r1.cookies)
 #---------register---------#
 # reg_url = 'http://localhost:8000/api/v1/user/register/'
 # head = {'Content-type':'application/json'}
-# data = {'username':'ojx1','password':'newpass'}
+# data = {'username':'ojxing1','password':'newpass'}
 # r = requests.post(reg_url,json.dumps(data),headers=head)
 # print(r.status_code)
 # print(r.content)
@@ -53,9 +53,9 @@ print(r1.cookies)
 
 #---------update userprofile---------#
 url = 'http://localhost:8000/api/v1/userprofile/edit/'
-data1 = {'qq':'584765203','mobile':'13416156631'}
-head = {'Content-type':'application/json'}
-r = requests.post(url,json.dumps(data1),headers=head,cookies={'sessionid':r1.cookies['sessionid'],'csrftoken':r1.cookies['csrftoken']})
+data1 = {'nationality':'china','mobile':'18588766631','email':'mrojxing@163.com'}
+head = {'Content-type':'application/json','X-CSRFToken':r1.cookies['csrftoken']}
+r = requests.put(url,json.dumps(data1),headers=head,cookies={'sessionid':r1.cookies['sessionid'],'csrftoken':r1.cookies['csrftoken']})
 print(r.status_code)
 print(r.content)
-print(r.cookies)
+print(r)

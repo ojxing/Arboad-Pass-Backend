@@ -85,7 +85,6 @@ class UserResource(ModelResource):
         oldpassword = data.get('oldpassword','')
         newpassword = data.get('newpassword','')
 
-        #if request.user.check_password(oldpassword):
         user = authenticate(username=request.user.username, password=oldpassword)
         if user is not None and user.is_active:
             if request.user.check_password(oldpassword):
@@ -105,7 +104,7 @@ class UserProfileResource(ModelResource):
         authorization = ProfileAuthorization()
         authentication = SessionAuthentication()
         allowed_method =['get','post','put','patch']
-
+        detail_allowed_methods =['get','post','put','patch']
     def prepend_urls(self):
         return [
             url(r"(?P<resource_name>%s)/show%s$"%(self._meta.resource_name,trailing_slash()),self.wrap_view('current_user'),name="api_showprofile"),
@@ -113,17 +112,10 @@ class UserProfileResource(ModelResource):
         ]
 
     def editprofile(self,request, **kwargs):
-        
-        self.method_check(request,allowed=['post'])
-        data = self.deserialize(request,request.body,format=request.META.get('CONTENT_TYPE','application/json'))
-        mobile = data.get('mobile','')
-
+        self.method_check(request,allowed=['post','put'])
         user = request.user
         profile = UserProfile.objects.get(user_id = user.id)
-        profile.mobile = mobile
-        profile.save()
-        return self.create_response(request,{'success':user.id,'reason':'OK'},HttpForbidden)
-        return self.obj_update(request,pk=15)
+        return super(UserProfileResource,self).put_detail(request,pk=profile.id)
 
     def current_user(self,request,**kwargs):
         user = request.user
@@ -132,7 +124,6 @@ class UserProfileResource(ModelResource):
         #return self.create_response(request,{'success':user.id,'reason':user.is_anonymous()},HttpForbidden)
         if user and not user.is_anonymous():
             return self.dispatch_detail(request,pk = profile.id)
-
 
     # def obj_create(self, bundle, **kwargs):
     #     #user = User.objects.get(pk=14)
