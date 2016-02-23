@@ -23,7 +23,7 @@ class UserResource(ModelResource):
     class Meta:
         queryset = User.objects.all()
         resource_name = 'user'
-        fields = {'username','email'}
+        fields = {'username','email','resource_uri'}
         allowed_method =['get','post','put','patch']
         authentication = SessionAuthentication()
         authorization = Authorization()
@@ -47,6 +47,7 @@ class UserResource(ModelResource):
             return self.create_response(request,{'success':False,'reason':'Username Existed!',},HttpForbidden)
 
         new_user = User.objects.create_user(username=username, email=username, password=password)
+        new_user.group = '1'
         new_user.save()
 
         return self.create_response(request,{'success':True})
@@ -90,6 +91,7 @@ class UserResource(ModelResource):
             if request.user.check_password(oldpassword):
                 user.set_password(newpassword)
                 user.save()
+                login(request,user)
                 return self.create_response(request,{'success': True,'reason':"Change Password Success!"},HttpForbidden)
             else:
                 return self.create_response(request,{'success':False,'reason':'Incorrect Password!'},HttpForbidden)
@@ -120,15 +122,13 @@ class UserProfileResource(ModelResource):
     def current_user(self,request,**kwargs):
         user = request.user
         profile = UserProfile.objects.get(user_id = user.id)
-        #return self.create_response(request,{'success':user.id,'reason':self.Meta.uid},HttpForbidden)
-        #return self.create_response(request,{'success':user.id,'reason':user.is_anonymous()},HttpForbidden)
         if user and not user.is_anonymous():
             return self.dispatch_detail(request,pk = profile.id)
 
-    # def obj_create(self, bundle, **kwargs):
-    #     #user = User.objects.get(pk=14)
-    #     profile = UserProfile(user=user)
-    #     profile.save()
+    def dehydrate(self, bundle):
+        bundle.data['email'] = '**'+bundle.obj.email
+        bundle.data['user_resource_uri'] = "/api/v1/user/" + str(bundle.obj.user.id) +"/"
+        return bundle
 
 class ProfileAuthorization(Authorization):
     def read_list(self, object_list, bundle):
