@@ -9,9 +9,12 @@ login = 'http://localhost:8000/api/v1/user/login/'
 data1 = {'username':'ojxing4','password':'abc123'}
 head = {'Content-type':'application/json'}
 r1 = requests.post(login,json.dumps(data1),headers=head)
+apikey = json.loads(r1.content)["api"]
 print(r1.status_code)
 print(r1.content)
 print(r1.cookies)
+
+
 
 #---------register---------#
 # reg_url = 'http://localhost:8000/api/v1/user/register/'
@@ -50,12 +53,12 @@ print(r1.cookies)
 # print(r.cookies)
 
 #-------provider profile------#
-provider_profile = 'http://localhost:8000/api/v1/provider/show/'
-head = {'Content-type':'application/json'}
-r = requests.get(provider_profile,headers=head,cookies={'sessionid':r1.cookies['sessionid'],'csrftoken':r1.cookies['csrftoken']})
-print(r.status_code)
-print(json.dumps(json.loads(r.content),indent=1))
-print(r.cookies)
+# provider_profile = 'http://localhost:8000/api/v1/provider/show/'
+# head = {'Content-type':'application/json'}
+# r = requests.get(provider_profile,headers=head,cookies={'sessionid':r1.cookies['sessionid'],'csrftoken':r1.cookies['csrftoken']})
+# print(r.status_code)
+# print(json.dumps(json.loads(r.content),indent=1))
+# print(r.cookies)
 
 #------update provider profile-----#
 # update_provider = 'http://localhost:8000/api/v1/provider/edit/'

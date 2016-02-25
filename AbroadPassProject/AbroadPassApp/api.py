@@ -6,12 +6,12 @@ from django.shortcuts import get_object_or_404
 from django.core.exceptions import ObjectDoesNotExist
 from tastypie.resources import ModelResource,ALL,ALL_WITH_RELATIONS
 from tastypie.authorization import Authorization
-from tastypie.authentication import ApiKeyAuthentication,SessionAuthentication
+from tastypie.authentication import ApiKeyAuthentication,SessionAuthentication,MultiAuthentication
 from tastypie import fields
 from tastypie.utils import trailing_slash
 from tastypie.models import ApiKey,create_api_key
 from tastypie.http import HttpUnauthorized,HttpForbidden,HttpNotFound
-from AbroadPassApp.models import Provider,NormalUser #create_user_profile
+from models import Provider,NormalUser #create_user_profile
 
 #create api key
 models.signals.post_save.connect(create_api_key, sender=User)
@@ -92,7 +92,7 @@ class UserResource(ModelResource):
             if user.is_active:
                 login(request,user)
                 api_key = ApiKey.objects.get(user=user)
-                return self.create_response(request,{'success':True,'api':api_key,'group':user.groups.all()[0]})
+                return self.create_response(request,{'success':True,'api':api_key.key,'group':user.groups.all()[0]})
             else:
                 return self.create_response(request,{'success':False,'reason':'disabled',},HttpForbidden)
         else:
@@ -129,7 +129,7 @@ class ProviderResource(ModelResource):
         queryset = Provider.objects.all()
         resource_name ='provider'
         authorization = Authorization()
-        authentication = SessionAuthentication()
+        authentication = MultiAuthentication(SessionAuthentication(),ApiKeyAuthentication())
         allowed_method =['get','post','put','patch']
         detail_allowed_methods =['get','post','put','patch']
 
