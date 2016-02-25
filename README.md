@@ -36,4 +36,4 @@ Run the server
 
 Api Doc
 --
- * [Api Doc](./ApiDoc)
+ * [Api Doc](./doc/ApiDoc.md)
