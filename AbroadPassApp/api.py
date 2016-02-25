@@ -135,7 +135,8 @@ class ProviderResource(ModelResource):
 
     def prepend_urls(self):
         return [
-            url(r"(?P<resource_name>%s)/edit%s$"%(self._meta.resource_name,trailing_slash()),self.wrap_view('edit_provider_profile'),name="api_editprofile"),
+            url(r"(?P<resource_name>%s)/edit%s$"%(self._meta.resource_name,trailing_slash()),self.wrap_view('edit_provider_profile'),name="api_edit_provider_profile"),
+            url(r"(?P<resource_name>%s)/show%s$"%(self._meta.resource_name,trailing_slash()),self.wrap_view('show_provider_profile'),name="api_show_provider_profile"),
         ]
 
     def edit_provider_profile(self,request, **kwargs):
@@ -148,11 +149,14 @@ class ProviderResource(ModelResource):
 
         return super(ProviderResource,self).put_detail(request,pk=profile.id)
 
-    def current_user(self,request,**kwargs):
+    def show_provider_profile(self,request,**kwargs):
         user = request.user
-        profile = NormalUser.objects.get(user_id = user.id)
-        if user and not user.is_anonymous():
-            return self.dispatch_detail(request,pk = profile.id)
+        try:
+            profile = Provider.objects.get(user_id = user.id)
+            if user and not user.is_anonymous():
+                return self.dispatch_detail(request,pk = profile.id)
+        except Provider.DoesNotExist:
+            return self.create_response(request,{'success':False,'reason':'Provider Not Existed!'},HttpNotFound)
 
     def dehydrate(self, bundle):
         bundle.data['username'] = bundle.obj.user
@@ -171,11 +175,11 @@ class NormalUserResource(ModelResource):
         detail_allowed_methods =['get','post','put','patch']
     def prepend_urls(self):
         return [
-            url(r"(?P<resource_name>%s)/show%s$"%(self._meta.resource_name,trailing_slash()),self.wrap_view('current_user'),name="api_showprofile"),
-            url(r"(?P<resource_name>%s)/edit%s$"%(self._meta.resource_name,trailing_slash()),self.wrap_view('edit_normaluser_profile'),name="api_editprofile"),
+            url(r"(?P<resource_name>%s)/show%s$"%(self._meta.resource_name,trailing_slash()),self.wrap_view('show_user_profile'),name="api_show_user_profile"),
+            url(r"(?P<resource_name>%s)/edit%s$"%(self._meta.resource_name,trailing_slash()),self.wrap_view('edit_user_profile'),name="api_edit_user_profile"),
         ]
 
-    def edit_normaluser_profile(self,request, **kwargs):
+    def edit_user_profile(self,request, **kwargs):
         self.method_check(request,allowed=['post','put'])
         user = request.user
         try:
@@ -184,23 +188,19 @@ class NormalUserResource(ModelResource):
             return self.create_response(request,{'success':False,'reason':'User Not Existed!'},HttpNotFound)
         return super(NormalUserResource,self).put_detail(request,pk=profile.id)
 
-    def current_user(self,request,**kwargs):
+    def show_user_profile(self,request,**kwargs):
         user = request.user
-        profile = NormalUser.objects.get(user_id = user.id)
-        if user and not user.is_anonymous():
-            return self.dispatch_detail(request,pk = profile.id)
+        try:
+            profile = NormalUser.objects.get(user_id = user.id)
+            if user and not user.is_anonymous():
+                return self.dispatch_detail(request,pk = profile.id)
+        except NormalUser.DoesNotExist:
+            return self.create_response(request,{'success':False,'reason':'User Not Existed!'},HttpNotFound)
 
     def dehydrate(self, bundle):
         bundle.data['username'] = bundle.obj.user
         bundle.data['userid'] = bundle.obj.user.id
         return bundle
-
-class ProfileAuthorization(Authorization):
-    def read_list(self, object_list, bundle):
-        return object_list.filter(user=bundle.request.user)
-
-    def update_detail(self, object_list, bundle):
-        return bundle.obj.user == bundle.request.user
 
 
 

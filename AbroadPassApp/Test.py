@@ -6,7 +6,7 @@ import json
 
 #--------login---------#
 login = 'http://localhost:8000/api/v1/user/login/'
-data1 = {'username':'ojxing5','password':'abc123'}
+data1 = {'username':'ojxing4','password':'abc123'}
 head = {'Content-type':'application/json'}
 r1 = requests.post(login,json.dumps(data1),headers=head)
 print(r1.status_code)
@@ -42,9 +42,17 @@ print(r1.cookies)
 #-------------------------------Profile Management-------------------------------#
 
 #-------provider list------#
-list = 'http://localhost:8000/api/v1/provider/'
+# provider_list = 'http://localhost:8000/api/v1/provider/'
+# head = {'Content-type':'application/json'}
+# r = requests.get(provider_list,headers=head,cookies={'sessionid':r1.cookies['sessionid'],'csrftoken':r1.cookies['csrftoken']})
+# print(r.status_code)
+# print(json.dumps(json.loads(r.content),indent=1))
+# print(r.cookies)
+
+#-------provider profile------#
+provider_profile = 'http://localhost:8000/api/v1/provider/show/'
 head = {'Content-type':'application/json'}
-r = requests.get(list,headers=head,cookies={'sessionid':r1.cookies['sessionid'],'csrftoken':r1.cookies['csrftoken']})
+r = requests.get(provider_profile,headers=head,cookies={'sessionid':r1.cookies['sessionid'],'csrftoken':r1.cookies['csrftoken']})
 print(r.status_code)
 print(json.dumps(json.loads(r.content),indent=1))
 print(r.cookies)
@@ -62,6 +70,14 @@ print(r.cookies)
 # normaluser_list = 'http://localhost:8000/api/v1/normaluser/'
 # head = {'Content-type':'application/json'}
 # r = requests.get(normaluser_list,headers=head,cookies={'sessionid':r1.cookies['sessionid'],'csrftoken':r1.cookies['csrftoken']})
+# print(r.status_code)
+# print(json.dumps(json.loads(r.content),indent=1))
+# print(r.cookies)
+
+#---------normal user profile---------#
+# normaluser_profile = 'http://localhost:8000/api/v1/normaluser/show/'
+# head = {'Content-type':'application/json'}
+# r = requests.get(normaluser_profile,headers=head,cookies={'sessionid':r1.cookies['sessionid'],'csrftoken':r1.cookies['csrftoken']})
 # print(r.status_code)
 # print(json.dumps(json.loads(r.content),indent=1))
 # print(r.cookies)
