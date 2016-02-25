@@ -97,6 +97,3 @@ Response: ProviderProfileResource with corresponding provider
 Tips: Details in the [Test.py](../AbroadPassApp/Test.py)
 
 
-Api Doc
---
- * [Api Doc](./ApiDoc)
