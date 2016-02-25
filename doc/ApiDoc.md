@@ -47,7 +47,7 @@ Url:   http://localhost:8000/api/v1/normaluser/
 Cookies:"sessionid","csrftoken"
 Response: NormaluserProfileResource with corresponding user list
 ```
-Tips: Details in the [Test.py](../AbroadPassApp/Test.py)
+Tips: Details in the [Test.py](../AbroadPassProject/AbroadPassApp/Test.py)
 
 ###View single normaluser profile (Logged in User)
 ```
@@ -56,7 +56,7 @@ Url:   http://localhost:8000/api/v1/normaluser/show/
 Cookies:"sessionid","csrftoken"
 Response: NormaluserProfileResource with corresponding user
 ```
-Tips: Details in the [Test.py](../AbroadPassApp/Test.py)
+Tips: Details in the [Test.py](../AbroadPassProject/AbroadPassApp/Test.py)
 
 ###Edit normaluser profile
 ```
@@ -66,7 +66,7 @@ Cookies:"sessionid","csrftoken"
 Body:{'email':'abc@abc.com'}
 Response: NormaluserProfileResource with corresponding user
 ```
-Tips: Details in the [Test.py](../AbroadPassApp/Test.py)
+Tips: Details in the [Test.py](../AbroadPassProject/AbroadPassApp/Test.py)
 
 ## Provider Profile Management
 ###View provider profile list
@@ -84,7 +84,7 @@ Url:   http://localhost:8000/api/v1/provider/show/
 Cookies:"sessionid","csrftoken"
 Response: ProviderProfileResource with corresponding provider
 ```
-Tips: Details in the [Test.py](../AbroadPassApp/Test.py)
+Tips: Details in the [Test.py](../AbroadPassProject/AbroadPassApp/Test.py)
 
 ###Edit provider profile
 ```
@@ -94,6 +94,6 @@ Cookies:"sessionid","csrftoken"
 Body:{'email':'abc@abc.com'}
 Response: ProviderProfileResource with corresponding provider
 ```
-Tips: Details in the [Test.py](../AbroadPassApp/Test.py)
+Tips: Details in the [Test.py](../AbroadPassProject/AbroadPassApp/Test.py)
 
 
