@@ -16,7 +16,7 @@ Install Django, testypie<br>
     
 Database onfig and synchronized
 --
-Set up db in setting.py
+Set up db in `setting.py`
 ```
 DATABASES = {
     'default': {
@@ -33,3 +33,7 @@ Synchronize db
 Run the server
 
     python manage.py runserver
+
+Api Doc
+--
+ * [Api Doc](./ApiDoc)
