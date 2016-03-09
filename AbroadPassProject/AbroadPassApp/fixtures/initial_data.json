@@ -1,0 +1,10359 @@
+[
+{
+    "fields": {
+        "name": "荷兰"
+    },
+    "model": "AbroadPassApp.Country"
+},
+{
+    "fields": {
+        "name": "挪威"
+    },
+    "model": "AbroadPassApp.Country"
+},
+{
+    "fields": {
+        "name": "新加坡"
+    },
+    "model": "AbroadPassApp.Country"
+},
+{
+    "fields": {
+        "name": "澳大利亚"
+    },
+    "model": "AbroadPassApp.Country"
+},
+{
+    "fields": {
+        "name": "瑞典"
+    },
+    "model": "AbroadPassApp.Country"
+},
+{
+    "fields": {
+        "name": "新西兰"
+    },
+    "model": "AbroadPassApp.Country"
+},
+{
+    "fields": {
+        "name": "加拿大"
+    },
+    "model": "AbroadPassApp.Country"
+},
+{
+    "fields": {
+        "name": "意大利"
+    },
+    "model": "AbroadPassApp.Country"
+},
+{
+    "fields": {
+        "name": "中国"
+    },
+    "model": "AbroadPassApp.Country"
+},
+{
+    "fields": {
+        "name": "美国"
+    },
+    "model": "AbroadPassApp.Country"
+},
+{
+    "fields": {
+        "name": "韩国"
+    },
+    "model": "AbroadPassApp.Country"
+},
+{
+    "fields": {
+        "name": "日本"
+    },
+    "model": "AbroadPassApp.Country"
+},
+{
+    "fields": {
+        "name": "丹麦"
+    },
+    "model": "AbroadPassApp.Country"
+},
+{
+    "fields": {
+        "name": "芬兰"
+    },
+    "model": "AbroadPassApp.Country"
+},
+{
+    "fields": {
+        "name": "德国"
+    },
+    "model": "AbroadPassApp.Country"
+},
+{
+    "fields": {
+        "name": "英国"
+    },
+    "model": "AbroadPassApp.Country"
+},
+{
+    "fields": {
+        "country": [
+            "中国"
+        ],
+        "name": "吉林"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "中国"
+        ],
+        "name": "山西"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "中国"
+        ],
+        "name": "黑龙江"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "中国"
+        ],
+        "name": "安徽"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "中国"
+        ],
+        "name": "江西"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "中国"
+        ],
+        "name": "天津"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "中国"
+        ],
+        "name": "北京"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "中国"
+        ],
+        "name": "辽宁"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "中国"
+        ],
+        "name": "重庆"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "中国"
+        ],
+        "name": "福建"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "中国"
+        ],
+        "name": "河北"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "中国"
+        ],
+        "name": "江苏"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "中国"
+        ],
+        "name": "广东"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "中国"
+        ],
+        "name": "上海"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "中国"
+        ],
+        "name": "陕西"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "中国"
+        ],
+        "name": "浙江"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "中国"
+        ],
+        "name": "香港"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "中国"
+        ],
+        "name": "澳门"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "中国"
+        ],
+        "name": "台湾"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "中国"
+        ],
+        "name": "山东"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "加利福尼亚州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "路易斯安那州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "德克萨斯州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "新泽西州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "佛罗里达州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "犹他州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "田纳西州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "马萨诸塞州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "纽约州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "佐治亚州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "蒙大拿州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "俄勒冈州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "密歇根州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "弗吉尼亚州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "俄克拉荷马州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "南卡罗来纳州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "宾夕法尼亚州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "威斯康星州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "华盛顿特区"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "特拉华州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "北卡罗来纳州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "华盛顿州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "伊利诺伊州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "马里兰州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "印第安纳州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "密苏里州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "爱荷华州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "亚利桑那州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "新罕不什尔州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "密西西比州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "俄亥俄州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "明尼苏达州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "科罗拉多州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "佛蒙特州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "罗德岛州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "堪萨斯州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "阿拉巴马州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "美国"
+        ],
+        "name": "康涅狄格州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "加拿大"
+        ],
+        "name": "马尼托巴省"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "加拿大"
+        ],
+        "name": "魁北克省"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "加拿大"
+        ],
+        "name": "西北地区"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "加拿大"
+        ],
+        "name": "怒纳武特地区"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "加拿大"
+        ],
+        "name": "新思科舍省"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "加拿大"
+        ],
+        "name": "新不伦瑞克省"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "加拿大"
+        ],
+        "name": "爱德华王子岛省"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "加拿大"
+        ],
+        "name": "育空地区"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "加拿大"
+        ],
+        "name": "不列颠哥伦比亚省"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "加拿大"
+        ],
+        "name": "安大略省"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "加拿大"
+        ],
+        "name": "纽芬兰拉布拉多省"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "加拿大"
+        ],
+        "name": "萨斯喀彻温省"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "加拿大"
+        ],
+        "name": "艾伯塔省"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "澳大利亚"
+        ],
+        "name": "新南威尔士州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "澳大利亚"
+        ],
+        "name": "维多利亚州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "澳大利亚"
+        ],
+        "name": "首都地区"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "澳大利亚"
+        ],
+        "name": "西澳洲"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "澳大利亚"
+        ],
+        "name": "南澳洲"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "澳大利亚"
+        ],
+        "name": "昆士兰州"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "英国"
+        ],
+        "name": "英格兰"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "英国"
+        ],
+        "name": "威尔士"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "英国"
+        ],
+        "name": "苏格兰"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "荷兰"
+        ],
+        "name": "荷兰"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "挪威"
+        ],
+        "name": "挪威"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "新加坡"
+        ],
+        "name": "新加坡"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "瑞典"
+        ],
+        "name": "瑞典"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "新西兰"
+        ],
+        "name": "新西兰"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "意大利"
+        ],
+        "name": "意大利"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "韩国"
+        ],
+        "name": "韩国"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "日本"
+        ],
+        "name": "日本"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "丹麦"
+        ],
+        "name": "丹麦"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "芬兰"
+        ],
+        "name": "芬兰"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "country": [
+            "德国"
+        ],
+        "name": "德国"
+    },
+    "model": "AbroadPassApp.City"
+},
+{
+    "fields": {
+        "city": [
+            "安徽"
+        ],
+        "name": "安徽财经大学商学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "浙江大学宁波理工学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安徽"
+        ],
+        "name": "滁州学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "重庆"
+        ],
+        "name": "重庆工商大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "华南农业大学珠江学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "意大利"
+        ],
+        "name": "马兰欧尼时装与设计学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "防灾科技学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "沈阳体育学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "杭州师范大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "中国刑事警察学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "石家庄经济学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "广东白云学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "日本"
+        ],
+        "name": "一桥大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "重庆"
+        ],
+        "name": "重庆邮电大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安徽"
+        ],
+        "name": "安徽工业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "西安理工大学高科学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "荷兰"
+        ],
+        "name": "代尔夫特理工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "绍兴文理学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新加坡"
+        ],
+        "name": "议安理工学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "上海"
+        ],
+        "name": "上海政法学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "重庆"
+        ],
+        "name": "四川美术学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "沈阳航空工业学院北方科技学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "北京交通大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "上海"
+        ],
+        "name": "同济大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安徽"
+        ],
+        "name": "安徽中医学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "福建"
+        ],
+        "name": "三明学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "西北农林科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "天津"
+        ],
+        "name": "天津科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江西"
+        ],
+        "name": "井冈山大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "天津"
+        ],
+        "name": "天津财经大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "福建"
+        ],
+        "name": "阳光学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "南京师范大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "河北农业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新加坡"
+        ],
+        "name": "伦敦商业金融学院新加坡校区"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "西安外事学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "天津"
+        ],
+        "name": "中国民航大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "香港"
+        ],
+        "name": "香港城市大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "挪威"
+        ],
+        "name": "特罗姆森大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "韩国"
+        ],
+        "name": "首尔大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "吉林"
+        ],
+        "name": "长春理工大学光电信息学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "辽宁对外经贸学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "吉林"
+        ],
+        "name": "东北师范大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "日本"
+        ],
+        "name": "大阪大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "沈阳理工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安徽"
+        ],
+        "name": "安徽师范大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "河海大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "大连医科大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "吉林"
+        ],
+        "name": "吉林医药学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "福建"
+        ],
+        "name": "福州大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "吉林"
+        ],
+        "name": "吉林工程技术师范学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "吉林"
+        ],
+        "name": "吉林农业科技学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "嘉兴学院南湖学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "南京理工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "香港"
+        ],
+        "name": "香港公开大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "香港"
+        ],
+        "name": "香港浸会大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安徽"
+        ],
+        "name": "安徽工业大学工商学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "温州医科大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "西安财经学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "日本"
+        ],
+        "name": "北海道大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "福建"
+        ],
+        "name": "厦门大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "辽宁工程技术大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "广州大学华软软件学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "中国传媒大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "西安电子科技大学长安学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "山西"
+        ],
+        "name": "太原工业学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "南京医科大学康达学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "北京科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "上海"
+        ],
+        "name": "上海外国语大学贤达经济人文学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "东莞理工学院城市学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "南京大学金陵学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "瑞典"
+        ],
+        "name": "查尔斯里理工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "西安理工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "北京师范大学珠海分校"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "绍兴文理学院元培学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "中国计量学院现代科技学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "沈阳化工学院科亚学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "宁波诺丁汉大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "丹麦"
+        ],
+        "name": "丹麦技术大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "湖州师范学院求真学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "沈阳城市建设学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "华南理工大学广州学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "上海"
+        ],
+        "name": "上海理工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "西安工业大学北方信息工程学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新加坡"
+        ],
+        "name": "淡马锡理工学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "中国人民大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "吉林"
+        ],
+        "name": "吉林师范大学博达学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "河北体育学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "山西"
+        ],
+        "name": "晋中学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "河北北方学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "西安工业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "江苏工业学院怀德学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "山东"
+        ],
+        "name": "山东建筑大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "大连东软信息学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "北京建筑工程学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "浙江树人大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "南通大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "陕西理工学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "荷兰"
+        ],
+        "name": "格罗宁根大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "挪威"
+        ],
+        "name": "挪威科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "浙江林学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "惠州学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "河北外国语学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "咸阳师范学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "中国青年政治学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "黑龙江"
+        ],
+        "name": "黑龙江大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新加坡"
+        ],
+        "name": "南洋理工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "浙江工商大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "天津"
+        ],
+        "name": "天津天狮学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "暨南大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "华北电力大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "吉林"
+        ],
+        "name": "长春财经学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "吉林"
+        ],
+        "name": "长春理工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "南京中医药大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "南京理工大学紫金学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "广州大学松田学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "天津"
+        ],
+        "name": "天津外国语大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "吉林"
+        ],
+        "name": "吉林艺术学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "浙江林学院天目学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江西"
+        ],
+        "name": "江西财经大学现代经济管理学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江西"
+        ],
+        "name": "南昌大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "南京工业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "芬兰"
+        ],
+        "name": "芬兰坦佩雷理工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "北京大学医学部"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "上海"
+        ],
+        "name": "上海中医药大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "浙江科技学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "重庆"
+        ],
+        "name": "重庆师范大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安徽"
+        ],
+        "name": "蚌埠医学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "南京医科大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "天津"
+        ],
+        "name": "天津农学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "日本"
+        ],
+        "name": "庆应义塾大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "北京化工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "西交利物浦大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "香港"
+        ],
+        "name": "香港中文大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "南京工程学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "石家庄铁道学院四方学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "佛山科学技术学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "西安文理学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "香港"
+        ],
+        "name": "香港理工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "商洛学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "南京晓庄学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "韩国"
+        ],
+        "name": "延世大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "吉林"
+        ],
+        "name": "吉林建筑大学城建学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "韩国"
+        ],
+        "name": "成均馆大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "西安科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "上海"
+        ],
+        "name": "上海海事大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "南京邮电大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "广东技术师范学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江西"
+        ],
+        "name": "宜春学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "辽东学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "沈阳大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "西安思源学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "韩国"
+        ],
+        "name": "高丽大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "辽宁中医药大学杏林学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "浙江中医药大学滨江学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "日本"
+        ],
+        "name": "九州大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "山西"
+        ],
+        "name": "山西医科大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "德国"
+        ],
+        "name": "亚琛工业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "中央司法警官学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "天津"
+        ],
+        "name": "天津师范大学津沽学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "唐山师范学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "重庆"
+        ],
+        "name": "重庆工商大学融智学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "重庆"
+        ],
+        "name": "重庆人文科技学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "湖州师范学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "渭南师范学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安徽"
+        ],
+        "name": "安徽师范大学皖江学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "中国矿业大学徐海学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "沈阳工程学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "山东"
+        ],
+        "name": "青岛科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "西北工业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "上海"
+        ],
+        "name": "上海海关学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "上海"
+        ],
+        "name": "上海立信会计学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "河北医科大学临床学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "南京师范大学中北学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安徽"
+        ],
+        "name": "皖南医学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新加坡"
+        ],
+        "name": "新加坡博伟教育学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "吉林"
+        ],
+        "name": "吉林动画学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "大连外国语学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "南通大学杏林学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安徽"
+        ],
+        "name": "皖西学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "北京科技职业学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "德国"
+        ],
+        "name": "慕尼黑大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "西安邮电大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "香港"
+        ],
+        "name": "香港大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安徽"
+        ],
+        "name": "安徽建筑大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "沈阳农业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "广东医学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "天津"
+        ],
+        "name": "天津医科大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "南京审计学院金审学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "华北电力大学(保定)"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "河北工程大学科信学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "大连医科大学中山学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "首都经济贸易大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "杭州电子科技大学信息工程学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "韩国"
+        ],
+        "name": "汉阳大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "浙江财经学院东方学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "清华大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "黑龙江"
+        ],
+        "name": "哈尔滨商业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "五邑大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "日本"
+        ],
+        "name": "名古屋大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "日本"
+        ],
+        "name": "神户大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "浙江师范大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "重庆"
+        ],
+        "name": "重庆交通大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "北京邮电大学世纪学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安徽"
+        ],
+        "name": "安徽工程大学机电学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "挪威"
+        ],
+        "name": "奥斯陆大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "国际关系学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "华北科技学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "西安电子科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安徽"
+        ],
+        "name": "淮北煤炭师范学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江西"
+        ],
+        "name": "赣南医学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "沈阳航空工业学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "山西"
+        ],
+        "name": "山西大学商务学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "辽宁师范大学海华学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "唐山学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "广州医科大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "辽宁何氏医学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "邯郸学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "芬兰"
+        ],
+        "name": "于韦斯屈莱理工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "西安医学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "山西"
+        ],
+        "name": "太原科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "山西"
+        ],
+        "name": "山西财经大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "广州体育学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "苏州大学文正学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "荷兰"
+        ],
+        "name": "内梅亨大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "苏州大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "辽宁科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "福建"
+        ],
+        "name": "龙岩学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "广东药学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "天津"
+        ],
+        "name": "天津中医药大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "西安建筑科技大学华清学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "沈阳医学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "西安体育学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "中山大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "陕西中医学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "芬兰"
+        ],
+        "name": "阿尔托大学理工学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "大连工业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "深圳大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "石家庄经济学院华信学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "宁波大学科学技术学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江西"
+        ],
+        "name": "上饶师范学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "天津"
+        ],
+        "name": "天津理工大学中环信息学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江西"
+        ],
+        "name": "华东交通大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "香港"
+        ],
+        "name": "岭南大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "广东工业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "华北理工大学轻工学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "福建"
+        ],
+        "name": "厦门理工学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "重庆"
+        ],
+        "name": "西南政法大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "吉林"
+        ],
+        "name": "吉林建筑工程学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "仲恺农业技术学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "荷兰"
+        ],
+        "name": "埃因霍芬理工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "荷兰"
+        ],
+        "name": "特温特大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "挪威"
+        ],
+        "name": "卑尔根大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "温州大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "韩国"
+        ],
+        "name": "西江大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "渤海大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安徽"
+        ],
+        "name": "阜阳师范学院信息工程学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "黑龙江"
+        ],
+        "name": "哈尔滨音乐学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "吉林大学珠海学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江西"
+        ],
+        "name": "南昌航空大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "浙江工业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "中国美术学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "天津"
+        ],
+        "name": "北京科技大学天津学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "上海"
+        ],
+        "name": "上海对外贸易大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "山东"
+        ],
+        "name": "中国海洋大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "仲恺农业工程学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安徽"
+        ],
+        "name": "阜阳师范学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "芬兰"
+        ],
+        "name": "赫尔辛基大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "天津"
+        ],
+        "name": "天津美术学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "山西"
+        ],
+        "name": "山西中医学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "吉林"
+        ],
+        "name": "吉林大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安徽"
+        ],
+        "name": "合肥学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "汕头大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "盐城师范学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "中国计量学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "东北大学大连艺术学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "山西"
+        ],
+        "name": "忻州师范学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "温州大学城市学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "辽宁石油化工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "河北科技师范学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新加坡"
+        ],
+        "name": "新加坡管理学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "徐州师范大学科文学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "西安翻译学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "福建"
+        ],
+        "name": "仰恩大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "日本"
+        ],
+        "name": "东京外国语大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "大连理工大学城市学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "杭州电子科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "南京邮电大学通达学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "西北大学现代学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "常熟理工学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "重庆"
+        ],
+        "name": "重庆大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安徽"
+        ],
+        "name": "安徽医科大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "浙江中医药大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "广州美术学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "江南大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "北京服装学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "吉林"
+        ],
+        "name": "吉林财经大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "瑞典"
+        ],
+        "name": "瑞典皇家理工学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "韩国"
+        ],
+        "name": "韩国中央大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "西北工业大学明德学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "丽水学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "大连海洋大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "中央财经大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "北京理工大学珠海学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "中国人民公安大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "福建"
+        ],
+        "name": "闽江学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新加坡"
+        ],
+        "name": "共和理工学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "吉林"
+        ],
+        "name": "吉林农业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "山东"
+        ],
+        "name": "山东大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "西安科技大学高新学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "荷兰"
+        ],
+        "name": "莱顿大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安徽"
+        ],
+        "name": "安徽农业大学经济技术学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "日本"
+        ],
+        "name": "横滨国立大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "上海"
+        ],
+        "name": "华东理工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "吉林"
+        ],
+        "name": "通化师范学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "吉林"
+        ],
+        "name": "长春工程学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "北京第二外国语学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "上海"
+        ],
+        "name": "上海海洋大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "燕山大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "荷兰"
+        ],
+        "name": "荷兰蒂尔堡大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "南京艺术学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江西"
+        ],
+        "name": "江西理工大学应用科学学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "福建"
+        ],
+        "name": "泉州师范学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "徐州医学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "福建"
+        ],
+        "name": "福建师范大学闽南科技学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "天津"
+        ],
+        "name": "天津财经大学珠江学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "广东警官学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "上海"
+        ],
+        "name": "同济大学同科学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "南方医科大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "韶关学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新西兰"
+        ],
+        "name": "新西兰杯卡托大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "重庆"
+        ],
+        "name": "重庆医科大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "北京中医药大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "吉林"
+        ],
+        "name": "长春师范学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新加坡"
+        ],
+        "name": "新加坡国立大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "福建"
+        ],
+        "name": "福建师范大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "河北金融学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "日本"
+        ],
+        "name": "东北大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "广东培正学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安徽"
+        ],
+        "name": "安徽理工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安徽"
+        ],
+        "name": "西南科技大学城市学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "瑞典"
+        ],
+        "name": "雪平大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "天津"
+        ],
+        "name": "天津体育学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "山西"
+        ],
+        "name": "山西农业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "西安交通大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "山东"
+        ],
+        "name": "山东科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "沈阳音乐学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "嘉应学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安徽"
+        ],
+        "name": "淮南师范学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "重庆"
+        ],
+        "name": "四川外国语大学重庆南方翻译学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江西"
+        ],
+        "name": "江西师范大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "南京理工大学泰州科技学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安徽"
+        ],
+        "name": "合肥工业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "天津"
+        ],
+        "name": "天津商业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江西"
+        ],
+        "name": "江西理工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "浙江理工大学科技与艺术学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "华南师范大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江西"
+        ],
+        "name": "江西农业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "荷兰"
+        ],
+        "name": "伊拉斯姆斯大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "石家庄学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "河北美术学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "河北工程大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "北京培黎职业学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "中国药科大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "西安交通大学城市学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "韩国"
+        ],
+        "name": "庆熙大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "瑞典"
+        ],
+        "name": "乌普萨拉大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "天津"
+        ],
+        "name": "天津大学仁爱学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "广东海洋大学寸金学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "南京航空航天大学金城学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "重庆"
+        ],
+        "name": "重庆大学城市科技学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "福建"
+        ],
+        "name": "福建农林大学东方学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "福建"
+        ],
+        "name": "厦门大学嘉庚学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "天津"
+        ],
+        "name": "天津工业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "荷兰"
+        ],
+        "name": "阿姆斯特丹大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "沈阳建筑大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "淮海工学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "辽宁师范大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "山西"
+        ],
+        "name": "山西农业大学信息学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "河北大学工商学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新西兰"
+        ],
+        "name": "坎特伯雷大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "荷兰"
+        ],
+        "name": "荷兰乌德勒支大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "华南师范大学增城学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "重庆"
+        ],
+        "name": "重庆科技学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "上海"
+        ],
+        "name": "上海金融学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "广州大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "北京联合大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "温州医学院仁济学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新加坡"
+        ],
+        "name": "新加坡管理大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "西安建筑科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "上海"
+        ],
+        "name": "上海体育学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "东北财经大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "山西"
+        ],
+        "name": "长治学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "上海"
+        ],
+        "name": "上海外国语大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "陕西科技大学镐京学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "福建"
+        ],
+        "name": "福建工程学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "西安工程大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "黑龙江"
+        ],
+        "name": "东北农业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "香港"
+        ],
+        "name": "香港教育学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "西安欧亚学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "瑞典"
+        ],
+        "name": "斯德哥尔摩大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "延安大学西安创新学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "韩国"
+        ],
+        "name": "梨花女子大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "长安大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "沈阳化工学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新西兰"
+        ],
+        "name": "惠灵顿维多利亚大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "德国"
+        ],
+        "name": "明斯特大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "陕西科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "瑞典"
+        ],
+        "name": "隆德大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "瑞典"
+        ],
+        "name": "于默奥大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "山西"
+        ],
+        "name": "太原理工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "肇庆学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "黑龙江"
+        ],
+        "name": "东北林业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "辽宁工业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "邢台学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江西"
+        ],
+        "name": "九江学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "德国"
+        ],
+        "name": "科隆大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "北华航天工业学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "福建"
+        ],
+        "name": "金山学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "山西"
+        ],
+        "name": "长治医学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "吉林"
+        ],
+        "name": "白城师范学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新加坡"
+        ],
+        "name": "新加坡管理发展学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "安康学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "河北医科大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "江苏科技大学南徐学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "天津"
+        ],
+        "name": "天津大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "上海"
+        ],
+        "name": "华东政法大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "鞍山师范学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "浙江传媒学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "天津"
+        ],
+        "name": "天津职业技术师范大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "荷兰"
+        ],
+        "name": "阿姆斯特丹自由大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "苏州大学应用技术学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "中国地质大学长城学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江西"
+        ],
+        "name": "南昌理工学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "北京物资学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "对外经济贸易大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "荷兰"
+        ],
+        "name": "马斯特里赫特大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "德国"
+        ],
+        "name": "德累斯顿工业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安徽"
+        ],
+        "name": "铜陵学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "吉林"
+        ],
+        "name": "北华大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "中国劳动关系学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "辽宁医学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "吉林"
+        ],
+        "name": "长春大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "福建"
+        ],
+        "name": "集美大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "浙江师范大学行知学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新加坡"
+        ],
+        "name": "新加坡楷博高等教育学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江西"
+        ],
+        "name": "江西中医学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江西"
+        ],
+        "name": "南昌工程学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "辽宁大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "重庆"
+        ],
+        "name": "重庆理工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "山西"
+        ],
+        "name": "中北大学信息商务学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "陕西国际商贸学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "浙江大学城市学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "广东外语外贸大学南国商学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "吉林"
+        ],
+        "name": "吉林体育学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江西"
+        ],
+        "name": "景德镇陶瓷学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "德国"
+        ],
+        "name": "柏林工业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "金陵科技学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "上海"
+        ],
+        "name": "上海工程技术大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "河北建筑工程学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安徽"
+        ],
+        "name": "中国科学技术大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "江苏大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新加坡"
+        ],
+        "name": "新加坡PSB学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "石家庄铁道大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "荷兰"
+        ],
+        "name": "荷兰瓦赫宁根大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "河北师范大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "日本"
+        ],
+        "name": "早稻田大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "天津"
+        ],
+        "name": "天津外国语学院滨海外事学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "山西"
+        ],
+        "name": "山西医科大学晋祠学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "吉林"
+        ],
+        "name": "长春光华学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "北京航空航天大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "嘉兴学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "上海"
+        ],
+        "name": "上海交通大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安徽"
+        ],
+        "name": "黄山学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "淮阴工学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "天津"
+        ],
+        "name": "天津理工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "南京中医药大学翰林学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "河北经贸大学经济管理学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "北京邮电大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "丹麦"
+        ],
+        "name": "哥本哈根大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "日本"
+        ],
+        "name": "京都大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "辽宁理工学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "吉林"
+        ],
+        "name": "长春工业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "南京工业大学浦江学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "大连理工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "衡水学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "南京审计学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "浙江理工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "重庆"
+        ],
+        "name": "重庆文理学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "扬州大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "沈阳药科大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "长安大学兴华学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "大连民族学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "西安财经学院行知学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "电子科技大学中山学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "北京石油化工学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "重庆"
+        ],
+        "name": "重庆邮电大学移通学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新加坡"
+        ],
+        "name": "新加坡南洋理工学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "中国医科大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安徽"
+        ],
+        "name": "安徽外国语学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "沈阳城市学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "河北传媒学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "黑龙江"
+        ],
+        "name": "哈尔滨理工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "上海"
+        ],
+        "name": "上海师范大学天华学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "浙江海洋学院东海科学技术学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "吉林"
+        ],
+        "name": "吉林工商学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江西"
+        ],
+        "name": "赣南师范学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "陕西师范大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "承德医学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "德国"
+        ],
+        "name": "汉堡大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "宁波工程学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "天津"
+        ],
+        "name": "天津医科大学临床医学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "河北农业大学现代科技学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "北京工商大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "山西"
+        ],
+        "name": "山西大同大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安徽"
+        ],
+        "name": "安徽科技学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安徽"
+        ],
+        "name": "安徽工程科技学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新加坡"
+        ],
+        "name": "新加坡科技设计大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "中山大学新华学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新西兰"
+        ],
+        "name": "奥克兰大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "首都体育学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "山西"
+        ],
+        "name": "山西师范大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "北京大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "重庆"
+        ],
+        "name": "四川外语学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "上海"
+        ],
+        "name": "上海电机学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "福建"
+        ],
+        "name": "福建医科大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "浙江工商大学杭州商学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "山西"
+        ],
+        "name": "太原科技大学华科学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "吉林"
+        ],
+        "name": "东北电力大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "上海"
+        ],
+        "name": "东华大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江西"
+        ],
+        "name": "江西科技学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "福建"
+        ],
+        "name": "福州大学至诚学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新加坡"
+        ],
+        "name": "东亚管理学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "中国矿业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "天津"
+        ],
+        "name": "河北工业大学城市学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新加坡"
+        ],
+        "name": "新加坡理工学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "大连海事大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "中国石油大学(北京)"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "天津"
+        ],
+        "name": "天津城市建设学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "山西"
+        ],
+        "name": "山西财经大学华商学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "广东工业大学华立学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "广东海洋大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "吉林"
+        ],
+        "name": "长春科技学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "私立华联学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "西安美术学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "北京工业大学耿丹学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "上海"
+        ],
+        "name": "上海应用技术学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "福建"
+        ],
+        "name": "集美大学诚毅学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "吉林"
+        ],
+        "name": "长春建筑学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "徐州工程学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "扬州大学广陵学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "芬兰"
+        ],
+        "name": "坦佩雷理工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "丹麦"
+        ],
+        "name": "奥胡斯大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "中国传媒大学南广学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "广东技术师范学院天河学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "三江学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "河北工业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "常州工学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "东莞理工学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江西"
+        ],
+        "name": "赣南师范学院科技学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "沈阳工业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "辽宁科技学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新西兰"
+        ],
+        "name": "新西兰林肯大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "天津"
+        ],
+        "name": "天津师范大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "广东财经大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "上海"
+        ],
+        "name": "上海电力学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "北京工商大学嘉华学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "上海"
+        ],
+        "name": "上海第二工业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "北京林业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "天津"
+        ],
+        "name": "南开大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "南京农业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "北京吉利大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "北京中医药大学东方学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "华北理工大学冀唐学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安徽"
+        ],
+        "name": "安庆师范学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "上海"
+        ],
+        "name": "上海交通大学医学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "河北大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "辽宁财贸学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "宁波大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "南京财经大学红山学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "德国"
+        ],
+        "name": "莱比锡大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "宝鸡文理学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "香港"
+        ],
+        "name": "香港科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "燕山大学里仁学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江西"
+        ],
+        "name": "东华理工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "重庆"
+        ],
+        "name": "长江师范学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "广东金融学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "重庆"
+        ],
+        "name": "重庆工商大学派斯学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "东南大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "河北科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "南京师范大学泰州学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "山西"
+        ],
+        "name": "太原师范学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "浙江工业大学之江学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "南京林业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "浙江越秀外国语学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "北京经济技术职业学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "福建"
+        ],
+        "name": "福建农林大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "天津"
+        ],
+        "name": "南开大学滨海学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "廊坊师范学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新西兰"
+        ],
+        "name": "奥塔哥大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "丹麦"
+        ],
+        "name": "南丹麦大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "苏州科技学院天平学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "辽宁石油化工大学顺华能源学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "吉林"
+        ],
+        "name": "吉林化工学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "南京财经大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新西兰"
+        ],
+        "name": "奥克兰理工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "日本"
+        ],
+        "name": "筑波大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "北京城市学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "德国"
+        ],
+        "name": "柏林自由大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "吉林"
+        ],
+        "name": "长春中医药大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新加坡"
+        ],
+        "name": "新加坡莎瑞管理学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "燕京理工学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "华南农业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "山西"
+        ],
+        "name": "山西大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "日本"
+        ],
+        "name": "东京大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新西兰"
+        ],
+        "name": "梅西大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "山西"
+        ],
+        "name": "太原理工大学现代科技学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "西安石油大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "大连科技学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "南京体育学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "福建"
+        ],
+        "name": "厦门华厦学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "吉林"
+        ],
+        "name": "吉林师范大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "西北政法大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "华北理工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安徽"
+        ],
+        "name": "安徽大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "韩国"
+        ],
+        "name": "浦项科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "河北科技大学理工学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "浙江海洋学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "中国医科大学临床医药学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安徽"
+        ],
+        "name": "巢湖学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "吉林"
+        ],
+        "name": "吉林华侨外国语学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "北京信息科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "北京印刷学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "中国政法大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "台州学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "天津"
+        ],
+        "name": "天津音乐学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "吉林"
+        ],
+        "name": "延边大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "南京大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "江苏理工学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "盐城工学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "茂名学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "大连大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "福建"
+        ],
+        "name": "华侨大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "华北电力大学科技学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "北京工业大学(实验学院)"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "黑龙江"
+        ],
+        "name": "哈尔滨师范大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安徽"
+        ],
+        "name": "安徽农业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "中国农业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "延安大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "陕西"
+        ],
+        "name": "榆林学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "芬兰"
+        ],
+        "name": "奥卢大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新加坡"
+        ],
+        "name": "新加坡ERC学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "山西"
+        ],
+        "name": "中北大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "温州大学瓯江学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "山西"
+        ],
+        "name": "运城学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "广东"
+        ],
+        "name": "华南理工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "淮阴师范学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "河北"
+        ],
+        "name": "河北师范大学汇华学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "福建"
+        ],
+        "name": "莆田学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "瑞典"
+        ],
+        "name": "哥德堡大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "江苏"
+        ],
+        "name": "江苏大学京江学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "福建"
+        ],
+        "name": "福建师范大学协和学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "浙江万里学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "天津"
+        ],
+        "name": "天津体育学院运动与文化艺术学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "浙江"
+        ],
+        "name": "浙江财经大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "福建"
+        ],
+        "name": "福建中医药大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "辽宁"
+        ],
+        "name": "辽宁中医药大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "重庆"
+        ],
+        "name": "重庆三峡学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北京"
+        ],
+        "name": "首都师范大学科德学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "马萨诸塞州"
+        ],
+        "name": "东北大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "纽约州"
+        ],
+        "name": "哥伦比亚大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "马萨诸塞州"
+        ],
+        "name": "布兰迪斯大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "马里兰州"
+        ],
+        "name": "约翰霍普金斯大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "佛罗里达州"
+        ],
+        "name": "迈阿密大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新罕不什尔州"
+        ],
+        "name": "达特茅斯学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "弗吉尼亚州"
+        ],
+        "name": "威廉玛丽学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "佐治亚州"
+        ],
+        "name": "佐治亚理工学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "路易斯安那州"
+        ],
+        "name": "杜兰大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "俄克拉荷马州"
+        ],
+        "name": "塔尔萨大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "康涅狄格州"
+        ],
+        "name": "耶鲁大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "康涅狄格州"
+        ],
+        "name": "纽黑文大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "俄勒冈州"
+        ],
+        "name": "俄勒冈州立大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "加利福尼亚州"
+        ],
+        "name": "加利福尼亚大学洛杉矶分校"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北卡罗来纳州"
+        ],
+        "name": "北卡罗来纳大学堂山分校"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "康涅狄格州"
+        ],
+        "name": "康涅狄格大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "佛罗里达州"
+        ],
+        "name": "佛罗里达州立大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "加利福尼亚州"
+        ],
+        "name": "加州大学圣塔芭芭拉分校"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "蒙大拿州"
+        ],
+        "name": "蒙大拿州立大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "伊利诺伊州"
+        ],
+        "name": "芝加哥大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "纽约州"
+        ],
+        "name": "纽约州立大学环境科学与林业学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "德克萨斯州"
+        ],
+        "name": "南卫理公会大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "加利福尼亚州"
+        ],
+        "name": "加州理工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "田纳西州"
+        ],
+        "name": "范德堡大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "纽约州"
+        ],
+        "name": "福特汉姆大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "南卡罗来纳州"
+        ],
+        "name": "克莱姆森大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "弗吉尼亚州"
+        ],
+        "name": "弗吉尼亚理工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "特拉华州"
+        ],
+        "name": "特拉华大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "马萨诸塞州"
+        ],
+        "name": "塔夫茨大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "宾夕法尼亚州"
+        ],
+        "name": "宾夕法尼亚大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "加利福尼亚州"
+        ],
+        "name": "斯坦福大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "阿拉巴马州"
+        ],
+        "name": "特洛伊大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北卡罗来纳州"
+        ],
+        "name": "维克森林大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "俄亥俄州"
+        ],
+        "name": "辛辛那提大学主校区"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "爱荷华州"
+        ],
+        "name": "爱荷华州立大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "弗吉尼亚州"
+        ],
+        "name": "乔治梅森大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "纽约州"
+        ],
+        "name": "纽约州立大学石溪分校"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "宾夕法尼亚州"
+        ],
+        "name": "卡内基梅隆大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "佛罗里达州"
+        ],
+        "name": "佛罗里达大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "科罗拉多州"
+        ],
+        "name": "科罗拉多矿业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "密歇根州"
+        ],
+        "name": "密歇根理工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "印第安纳州"
+        ],
+        "name": "圣母大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "印第安纳州"
+        ],
+        "name": "普渡大学西拉法叶校区"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "纽约州"
+        ],
+        "name": "伦斯勒理工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "路易斯安那州"
+        ],
+        "name": "路易斯安那州立大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "马萨诸塞州"
+        ],
+        "name": "波士顿大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "俄克拉荷马州"
+        ],
+        "name": "俄克拉荷马大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "伊利诺伊州"
+        ],
+        "name": "伊利诺伊大学厄巴纳香槟分校"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北卡罗来纳州"
+        ],
+        "name": "北卡罗莱纳州立大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "加利福尼亚州"
+        ],
+        "name": "加利福尼亚大学圣克鲁兹校区"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "密苏里州"
+        ],
+        "name": "密苏里大学哥伦比亚分校"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "密西西比州"
+        ],
+        "name": "密西西比大学主校区"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "弗吉尼亚州"
+        ],
+        "name": "弗吉尼亚大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "德克萨斯州"
+        ],
+        "name": "贝勒大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "华盛顿特区"
+        ],
+        "name": "马里兰大学帕克分校"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "华盛顿特区"
+        ],
+        "name": "乔治华盛顿大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "加利福尼亚州"
+        ],
+        "name": "加利福尼亚大学圣地亚哥分校"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "加利福尼亚州"
+        ],
+        "name": "加州大学河滨分校"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "爱荷华州"
+        ],
+        "name": "爱荷华大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "加利福尼亚州"
+        ],
+        "name": "佩珀代因大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "马萨诸塞州"
+        ],
+        "name": "麻省理工学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "宾夕法尼亚州"
+        ],
+        "name": "匹兹堡大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "犹他州"
+        ],
+        "name": "犹他大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "印第安纳州"
+        ],
+        "name": "普渡大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "纽约州"
+        ],
+        "name": "罗切斯特大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "宾夕法尼亚州"
+        ],
+        "name": "天普大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "印第安纳州"
+        ],
+        "name": "印第安纳大学柏明顿分校"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "伊利诺伊州"
+        ],
+        "name": "伊利诺伊州立大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "威斯康星州"
+        ],
+        "name": "威斯康星大学麦迪孙分校"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "亚利桑那州"
+        ],
+        "name": "亚利桑那州立大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "伊利诺伊州"
+        ],
+        "name": "伊利诺伊斯理工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "佛蒙特州"
+        ],
+        "name": "佛蒙特大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北卡罗来纳州"
+        ],
+        "name": "杜克大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "明尼苏达州"
+        ],
+        "name": "明尼苏达大学双城分校"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "马萨诸塞州"
+        ],
+        "name": "伍斯特理工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新泽西州"
+        ],
+        "name": "普林斯顿大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新泽西州"
+        ],
+        "name": "罗格斯大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "纽约州"
+        ],
+        "name": "叶史瓦大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "密苏里州"
+        ],
+        "name": "密苏里科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "加利福尼亚州"
+        ],
+        "name": "加利福尼亚大学伯克利分校"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "德克萨斯州"
+        ],
+        "name": "德克萨斯基督教大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "堪萨斯州"
+        ],
+        "name": "堪萨斯大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "加利福尼亚州"
+        ],
+        "name": "加利福尼亚大学尔湾分校"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "科罗拉多州"
+        ],
+        "name": "丹佛大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "德克萨斯州"
+        ],
+        "name": "德克萨斯大学奥斯汀分校"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "华盛顿特区"
+        ],
+        "name": "美利坚大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "德克萨斯州"
+        ],
+        "name": "德克萨斯A&M大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "北卡罗来纳州"
+        ],
+        "name": "北卡罗来纳大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "犹他州"
+        ],
+        "name": "杨百翰大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "加利福尼亚州"
+        ],
+        "name": "加利福尼亚大学戴维斯分校"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "伊利诺伊州"
+        ],
+        "name": "西北大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "华盛顿特区"
+        ],
+        "name": "乔治城大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "华盛顿州"
+        ],
+        "name": "华盛顿大学西雅图分校"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "马萨诸塞州"
+        ],
+        "name": "哈佛大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "罗德岛州"
+        ],
+        "name": "布朗大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "宾夕法尼亚州"
+        ],
+        "name": "宾夕法尼亚州立大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "俄亥俄州"
+        ],
+        "name": "迈阿密大学（牛津）"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "纽约州"
+        ],
+        "name": "康奈尔大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "密苏里州"
+        ],
+        "name": "华盛顿大学圣路易斯分校"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "俄勒冈州"
+        ],
+        "name": "俄勒冈大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "加利福尼亚州"
+        ],
+        "name": "南加州大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "纽约州"
+        ],
+        "name": "纽约大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "俄亥俄州"
+        ],
+        "name": "俄亥俄州立大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "佐治亚州"
+        ],
+        "name": "埃默里大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "科罗拉多州"
+        ],
+        "name": "科罗拉多州立大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "宾夕法尼亚州"
+        ],
+        "name": "德雷赛尔大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "纽约州"
+        ],
+        "name": "雪城大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "密歇根州"
+        ],
+        "name": "密歇根大学安娜堡分校"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "马萨诸塞州"
+        ],
+        "name": "克拉克大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新泽西州"
+        ],
+        "name": "史蒂文斯理工学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "堪萨斯州"
+        ],
+        "name": "堪萨斯州立大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "阿拉巴马州"
+        ],
+        "name": "阿拉巴马大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "田纳西州"
+        ],
+        "name": "田纳西大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "纽约州"
+        ],
+        "name": "纽约州立大学宾汉姆顿大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "佐治亚州"
+        ],
+        "name": "美国佐治亚大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "密歇根州"
+        ],
+        "name": "密歇根州立大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "科罗拉多州"
+        ],
+        "name": "科罗拉多大学波尔得分校"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "威斯康星州"
+        ],
+        "name": "马凯特大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "巴斯大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "文藻外语大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "美和科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "牛津大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "不列颠哥伦比亚省"
+        ],
+        "name": "英属哥伦毕业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立台中教育大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "基尔大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立新竹教育大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立台北商业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "开南大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "安格利亚鲁斯大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "考文垂大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "伦敦玛利女王大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "亚洲大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "朴茨茅斯大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "索尔福德大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "伦敦大学学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立政治大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安大略省"
+        ],
+        "name": "特伦特大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立屏东科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立高雄大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立台中科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立台南大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "和春技术学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "伦敦艺术大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "维多利亚州"
+        ],
+        "name": "拉筹伯大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "侨光科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "埃克塞特大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "西澳洲"
+        ],
+        "name": "莫道克大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "杜伦大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "嘉南药理大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "台北医学大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "中华大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "温切斯特大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "中国文化大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "南澳洲"
+        ],
+        "name": "南澳大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "赫特福德大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "德蒙福特大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新思科舍省"
+        ],
+        "name": "阿卡迪亚大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立高雄第一科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新南威尔士州"
+        ],
+        "name": "纽卡素尔大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "提赛德大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "元智大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安大略省"
+        ],
+        "name": "加拿大女王大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "中华科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "静宜大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立台南艺术大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "台南应用科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立台湾大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "诺森比亚大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "昆士兰州"
+        ],
+        "name": "昆士兰大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "北安普顿大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "威尔士"
+        ],
+        "name": "卡迪夫大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "长庚科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "西英格兰大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "中国医药大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "苏格兰"
+        ],
+        "name": "格拉斯哥大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "修平科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "南台科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "萨斯喀彻温省"
+        ],
+        "name": "萨斯喀彻温大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "南开科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "世新大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "不列颠哥伦比亚省"
+        ],
+        "name": "加拿大维多利亚大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立交通大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "苏格兰"
+        ],
+        "name": "爱丁堡大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "桑德兰大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新南威尔士州"
+        ],
+        "name": "悉尼大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "南安普顿大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "首都地区"
+        ],
+        "name": "澳大利亚国立大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "伯恩茅斯大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "台湾首府大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新思科舍省"
+        ],
+        "name": "圣玛丽大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "实践大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "苏格兰"
+        ],
+        "name": "斯特拉斯克莱德大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "苏格兰"
+        ],
+        "name": "圣安德鲁斯大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "苏格兰"
+        ],
+        "name": "斯特灵大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新不伦瑞克省"
+        ],
+        "name": "蒙克顿大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "奇切斯特大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "正修科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "利兹大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "威尔士"
+        ],
+        "name": "班戈大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "西澳洲"
+        ],
+        "name": "科廷大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "威尔士"
+        ],
+        "name": "亚伯大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "布莱顿大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "格鲁斯特大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立中央大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立金门大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "弘光科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "维多利亚州"
+        ],
+        "name": "迪肯大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "昆山科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "明志科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安大略省"
+        ],
+        "name": "多伦多大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "普利茅斯大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "朝阳科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "大汉技术学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "马尼托巴省"
+        ],
+        "name": "麦吉尔大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "台北市立大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "谢菲尔德哈勒姆大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "高雄医学大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "艾伯塔省"
+        ],
+        "name": "卡尔加里大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "龙华科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "利物浦约翰摩尔斯大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "华梵大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立台北科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "纽曼大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "西澳洲"
+        ],
+        "name": "西奥大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "哈的斯菲尔德大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "昆士兰州"
+        ],
+        "name": "格里菲斯大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立台湾体育运动大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "圣约翰科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "大叶大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "东吴大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "南华大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "元培医事科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "东南科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新思科舍省"
+        ],
+        "name": "达尔豪斯大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "格林威治大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立台北大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立台湾海洋大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "伦敦政治经济大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "诺丁汉特伦特大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安大略省"
+        ],
+        "name": "渥太华大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立台湾艺术大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "曼切斯特城市大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "中国科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "东方设计学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新思科舍省"
+        ],
+        "name": "卡普顿大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "纽卡斯尔大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "伯明翰大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "切斯特大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "布鲁内尔大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立台东大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立体育大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "诺丁汉大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新南威尔士州"
+        ],
+        "name": "悉尼科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安大略省"
+        ],
+        "name": "卡尔顿大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "莱斯特大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "中州科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立澎湖科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "景文科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "维多利亚州"
+        ],
+        "name": "墨尔本大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新思科舍省"
+        ],
+        "name": "蒙特圣文森特大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "真理大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安大略省"
+        ],
+        "name": "韦仕敦大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "维多利亚州"
+        ],
+        "name": "莫那什大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "马尼托巴省"
+        ],
+        "name": "布兰登大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立台湾师范大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "佛光大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "苏格兰"
+        ],
+        "name": "邓迪大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "逢甲大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新南威尔士州"
+        ],
+        "name": "麦考瑞大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "史丹福郡大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立宜兰大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新不伦瑞克省"
+        ],
+        "name": "蒙特爱立森大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "威尔士"
+        ],
+        "name": "斯望西大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "剑桥大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立嘉义大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立屏东大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "圣玛丽大学学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "赫尔大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新南威尔士州"
+        ],
+        "name": "新南威尔士大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "魁北克省"
+        ],
+        "name": "毕索大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "环球科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立高雄师范大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安大略省"
+        ],
+        "name": "温莎大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "辅英科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "约克大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "致理科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "苏格兰"
+        ],
+        "name": "罗伯特戈登大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "华威大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "台北海洋科技学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "长庚大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "苏格兰"
+        ],
+        "name": "赫瑞瓦特大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "爱德华王子岛省"
+        ],
+        "name": "爱德华王子岛大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立高雄应用科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "曼切斯特大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "万能科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "南澳洲"
+        ],
+        "name": "阿德莱德大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "德比大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "不列颠哥伦比亚省"
+        ],
+        "name": "北英属哥伦毕业大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "马兰欧尼学院伦敦校区"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "台北城市科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "明新科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "萨塞克斯大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "布拉德福德大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "苏格兰"
+        ],
+        "name": "爱丁堡龙比亚大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立虎尾科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立高雄海洋科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "苏格兰"
+        ],
+        "name": "玛格丽特女王大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "义守大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安大略省"
+        ],
+        "name": "圭尔夫大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "淡江大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "艾伯塔省"
+        ],
+        "name": "阿尔伯塔大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "铭传大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "边山大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "辅仁大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安大略省"
+        ],
+        "name": "尼皮辛大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "建国科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "昆士兰州"
+        ],
+        "name": "昆士兰科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "伯明翰城市大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "慈济大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "林肯大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "东海大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立东华大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "雷丁大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "大同大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "肯特大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "中原大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立中山大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "帝国理工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立高雄餐旅大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "法鼓文理学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "岭东科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立联合大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "牛津布鲁克斯大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "利物浦大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "中山医学大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安大略省"
+        ],
+        "name": "安大略理工大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "玄奘大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "中央兰开夏大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立台北教育大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立台湾科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立成功大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "德明财经科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "巴斯斯巴大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "法尔茅斯大学学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "萨里大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新思科舍省"
+        ],
+        "name": "圣弗朗西斯泽维尔大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "谢菲尔德大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立中兴大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "高苑科技大"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "不列颠哥伦比亚省"
+        ],
+        "name": "西蒙弗雷泽大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "约克圣约翰大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立暨南国际大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安大略省"
+        ],
+        "name": "滑铁卢大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "维多利亚州"
+        ],
+        "name": "斯威本科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "西伦敦大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "兰卡斯特大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "中台科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "远东科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "安大略省"
+        ],
+        "name": "麦克马斯特大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "埃塞克斯大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "白金汉大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "阿斯顿大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "伦敦城市大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立彰化师范大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "东安格利亚大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "健行科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "树德科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "萨斯喀彻温省"
+        ],
+        "name": "里贾纳大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立阳明大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "伦敦大学金史密斯学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "长荣大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "新南威尔士州"
+        ],
+        "name": "卧龙岗大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立清华大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "苏格兰"
+        ],
+        "name": "阿伯丁大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立台北艺术大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "拉夫堡大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立云林科技大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立台北护理健康大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "台湾"
+        ],
+        "name": "国立中正大学"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "英格兰"
+        ],
+        "name": "伦敦大学国王学院"
+    },
+    "model": "AbroadPassApp.School"
+},
+{
+    "fields": {
+        "city": [
+            "马尼托巴省"
+        ],
+        "name": "曼尼托巴大学"
+    },
+    "model": "AbroadPassApp.School"
+}
+
+]

@@ -5,14 +5,14 @@ import json
 #-------------------------------Authentication-------------------------------#
 
 #--------login---------#
-login = 'http://localhost:8000/api/v1/user/login/'
-data1 = {'username':'ojxing4','password':'abc123'}
-head = {'Content-type':'application/json'}
-r1 = requests.post(login,json.dumps(data1),headers=head)
-apikey = json.loads(r1.content)["api"]
-print(r1.status_code)
-print(r1.content)
-print(r1.cookies)
+# login = 'http://localhost:8000/api/v1/user/login/'
+# data1 = {'username':'ojxing5','password':'abc123'}
+# head = {'Content-type':'application/json'}
+# r1 = requests.post(login,json.dumps(data1),headers=head)
+# apikey = json.loads(r1.content)["api"]
+# print(r1.status_code)
+# print(r1.content)
+# print(r1.cookies)
 
 
 
@@ -62,7 +62,7 @@ print(r1.cookies)
 
 #------update provider profile-----#
 # update_provider = 'http://localhost:8000/api/v1/provider/edit/'
-# data1 = {'nationality':'hk','mobile':'18588766631','email':'mrojxing@163.com'}
+# data1 = {'nationality':'china','mobile':'123456789','email':'mrojxing@163.com','user_realname':'区家兴'}
 # head = {'Content-type':'application/json','X-CSRFToken':r1.cookies['csrftoken']}
 # r = requests.put(update_provider,json.dumps(data1),headers=head,cookies={'sessionid':r1.cookies['sessionid'],'csrftoken':r1.cookies['csrftoken']})
 # print(r.status_code)
@@ -93,3 +93,30 @@ print(r1.cookies)
 # print(r.status_code)
 # print(r.content)
 # print(r)
+
+
+#-------------------------------School List Management-------------------------------#
+
+#-------country list------#
+# country_list = 'http://localhost:8000/api/v1/country/'
+# head = {'Content-type':'application/json'}
+# r = requests.get(country_list,headers=head)
+# print(r.status_code)
+# print(json.dumps(json.loads(r.content),indent=1,ensure_ascii=False))
+# print(r.cookies)
+
+#-------city list------#
+# city_list = 'http://localhost:8000/api/v1/city/?country__name=美国'
+# head = {'Content-type':'application/json'}
+# r = requests.get(city_list,headers=head)
+# print(r.status_code)
+# print(json.dumps(json.loads(r.content),indent=1,ensure_ascii=False))
+# print(r.cookies)
+
+#-------school list------#
+school_list = 'http://localhost:8000/api/v1/school/?city__name=北京'
+head = {'Content-type':'application/json'}
+r = requests.get(school_list,headers=head)
+print(r.status_code)
+print(json.dumps(json.loads(r.content),indent=1,ensure_ascii=False))
+print(r.cookies)

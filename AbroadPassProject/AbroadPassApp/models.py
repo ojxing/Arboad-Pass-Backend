@@ -7,6 +7,7 @@ from django.db.models.signals import post_save
 
 class NormalUser(models.Model):
     user = models.OneToOneField(User,related_name='normaluser')
+    user_realname = models.CharField(max_length=10,null=False,default="")
     gender = models.CharField(max_length=10)
     birth = models.DateField(null=True)
     province = models.CharField(max_length=50)
@@ -22,6 +23,7 @@ class NormalUser(models.Model):
 
 class Provider(models.Model):
     user = models.OneToOneField(User,related_name='provider')
+    user_realname = models.CharField(max_length=10,null=False,default="")
     gender = models.CharField(max_length=10)
     birth = models.DateField(null=True)
     province = models.CharField(max_length=50)
@@ -35,6 +37,31 @@ class Provider(models.Model):
     school = models.CharField(max_length=50)
     gpa = models.CharField(max_length=5)
 
+
+
+#Country,City and School List
+class CountryManager(models.Manager):
+    def get_by_natural_key(self,name):
+        return self.get(name=name);
+class Country(models.Model):
+    objects = CountryManager()
+    name = models.CharField(max_length=10)
+    class Meta:
+        unique_together=('name',)
+
+class CityManager(models.Manager):
+    def get_by_natural_key(self,name):
+        return self.get(name=name);
+class City(models.Model):
+    objects = CityManager()
+    country = models.ForeignKey(Country)
+    name = models.CharField(max_length=20)
+    class Meta:
+        unique_together=('name',)
+
+class School(models.Model):
+    city = models.ForeignKey(City)
+    name = models.CharField(max_length=50)
 
 #profile auto-created when user register
 # def create_user_profile(sender,**kwargs):
