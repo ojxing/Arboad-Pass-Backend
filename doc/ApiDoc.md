@@ -1,9 +1,11 @@
 接口描述
 ==
-## Base URL
+## 1.Base URL
 
     http://localhost:8000/api/v1/
-## Authentication
+    
+<br/><br/> 
+## 2.Authentication
 ### Register
 
 ```
@@ -39,7 +41,7 @@ Body： {'oldpassword':'oldpassword','newpassword':'newpassword'}
 Response:{'success': bool_result ,'reason':'if error occur,show error'}
 ```
 <br/><br/>
-## Normal User Profile Management
+## 3.Normal User Profile Management
 ###View normaluser profile list
 ```
 Method:GET
@@ -68,7 +70,8 @@ Response: NormaluserProfileResource with corresponding user
 ```
 Tips: Details in the [Test.py](../AbroadPassProject/AbroadPassApp/Test.py)
 
-## Provider Profile Management
+<br/><br/>
+## 4.Provider Profile Management
 ###View provider profile list
 ```
 Method:GET
@@ -96,4 +99,32 @@ Response: ProviderProfileResource with corresponding provider
 ```
 Tips: Details in the [Test.py](../AbroadPassProject/AbroadPassApp/Test.py)
 
+<br/><br/>
+## 5.Get School、Major Infor list
+###Get Country List
+```
+Method:GET
+Url:   http://localhost:8000/api/v1/country/
+Response: country list
+```
 
+###Get City List By Country
+```
+Method:GET
+Url:   http://localhost:8000/api/v1/city/?country__name=中国/
+Response: city list
+```
+
+###Get School List By City
+```
+Method:GET
+Url:   http://localhost:8000/api/v1/school/?city__name=北京/
+Response: school list
+```
+
+###Get Major Category List
+```
+Method:GET
+Url:   http://localhost:8000/api/v1/major/
+Response: major category list
+```
