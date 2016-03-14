@@ -1,6 +1,6 @@
 from tastypie.resources import ModelResource,ALL,ALL_WITH_RELATIONS
 from tastypie.authorization import Authorization
-from AbroadPassProject.AbroadPassApp.models import Country,City,School
+from AbroadPassProject.AbroadPassApp.models import Country,City,School,Major
 from tastypie import fields
 
 class CountryResource(ModelResource):
@@ -32,3 +32,8 @@ class SchoolResource(ModelResource):
         filtering ={
             'city':ALL_WITH_RELATIONS
         }
+
+class MajorResource(ModelResource):
+    class Meta:
+        queryset = Major.objects.all()
+        resource_name = 'major'

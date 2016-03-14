@@ -63,6 +63,9 @@ class School(models.Model):
     city = models.ForeignKey(City)
     name = models.CharField(max_length=50)
 
+class Major(models.Model):
+    name = models.CharField(max_length=50)
+
 #profile auto-created when user register
 # def create_user_profile(sender,**kwargs):
 #     user = kwargs["instance"]

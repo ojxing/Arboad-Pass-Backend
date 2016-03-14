@@ -114,9 +114,17 @@ import json
 # print(r.cookies)
 
 #-------school list------#
-school_list = 'http://localhost:8000/api/v1/school/?city__name=北京'
+# school_list = 'http://localhost:8000/api/v1/school/?city__name=北京'
+# head = {'Content-type':'application/json'}
+# r = requests.get(school_list,headers=head)
+# print(r.status_code)
+# print(json.dumps(json.loads(r.content),indent=1,ensure_ascii=False))
+# print(r.cookies)
+
+#-------major list------#
+major_list = 'http://localhost:8000/api/v1/major/'
 head = {'Content-type':'application/json'}
-r = requests.get(school_list,headers=head)
+r = requests.get(major_list,headers=head)
 print(r.status_code)
 print(json.dumps(json.loads(r.content),indent=1,ensure_ascii=False))
 print(r.cookies)

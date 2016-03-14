@@ -1,0 +1,206 @@
+[
+{
+    "fields": {
+        "name": "工业系统/专业化系统工程/交通系统/航空航天/物流/"
+    },
+    "model": "AbroadPassApp.Major"
+},
+{
+    "fields": {
+        "name": "纺织工程类"
+    },
+    "model": "AbroadPassApp.Major"
+},
+{
+    "fields": {
+        "name": "食品工程"
+    },
+    "model": "AbroadPassApp.Major"
+},
+{
+    "fields": {
+        "name": "经济学/金融/应用经济学/数量经济"
+    },
+    "model": "AbroadPassApp.Major"
+},
+{
+    "fields": {
+        "name": "建筑/建筑设计/房地产/城市设计/室内设计/建筑史"
+    },
+    "model": "AbroadPassApp.Major"
+},
+{
+    "fields": {
+        "name": "人力资源管理"
+    },
+    "model": "AbroadPassApp.Major"
+},
+{
+    "fields": {
+        "name": "化学"
+    },
+    "model": "AbroadPassApp.Major"
+},
+{
+    "fields": {
+        "name": "工商管理/国际商贸&金融/市场营销/供应链管理"
+    },
+    "model": "AbroadPassApp.Major"
+},
+{
+    "fields": {
+        "name": "音乐/美术/艺术/艺术史"
+    },
+    "model": "AbroadPassApp.Major"
+},
+{
+    "fields": {
+        "name": "酒店管理/旅游管理"
+    },
+    "model": "AbroadPassApp.Major"
+},
+{
+    "fields": {
+        "name": "工业设计/产品设计"
+    },
+    "model": "AbroadPassApp.Major"
+},
+{
+    "fields": {
+        "name": "物理/材料"
+    },
+    "model": "AbroadPassApp.Major"
+},
+{
+    "fields": {
+        "name": "图书馆学/博物馆学"
+    },
+    "model": "AbroadPassApp.Major"
+},
+{
+    "fields": {
+        "name": "法律"
+    },
+    "model": "AbroadPassApp.Major"
+},
+{
+    "fields": {
+        "name": "语言/文学/文化/历史/哲学"
+    },
+    "model": "AbroadPassApp.Major"
+},
+{
+    "fields": {
+        "name": "公共卫生/护理/运动医学/心理治疗/制药/医学"
+    },
+    "model": "AbroadPassApp.Major"
+},
+{
+    "fields": {
+        "name": "体育"
+    },
+    "model": "AbroadPassApp.Major"
+},
+{
+    "fields": {
+        "name": "土木工程/环境工程/能源工程/海洋工程"
+    },
+    "model": "AbroadPassApp.Major"
+},
+{
+    "fields": {
+        "name": "牙医"
+    },
+    "model": "AbroadPassApp.Major"
+},
+{
+    "fields": {
+        "name": "跨学科联合学位"
+    },
+    "model": "AbroadPassApp.Major"
+},
+{
+    "fields": {
+        "name": "电气/通信/设备工程"
+    },
+    "model": "AbroadPassApp.Major"
+},
+{
+    "fields": {
+        "name": "社会科学/社工/公共政策管理/政治/国际关系"
+    },
+    "model": "AbroadPassApp.Major"
+},
+{
+    "fields": {
+        "name": "广告设计/视觉传达设计/交互设计/数字媒体"
+    },
+    "model": "AbroadPassApp.Major"
+},
+{
+    "fields": {
+        "name": "中医"
+    },
+    "model": "AbroadPassApp.Major"
+},
+{
+    "fields": {
+        "name": "地理科学/宇宙科学"
+    },
+    "model": "AbroadPassApp.Major"
+},
+{
+    "fields": {
+        "name": "数学/统计/精算"
+    },
+    "model": "AbroadPassApp.Major"
+},
+{
+    "fields": {
+        "name": "会计"
+    },
+    "model": "AbroadPassApp.Major"
+},
+{
+    "fields": {
+        "name": "教育"
+    },
+    "model": "AbroadPassApp.Major"
+},
+{
+    "fields": {
+        "name": "工程管理"
+    },
+    "model": "AbroadPassApp.Major"
+},
+{
+    "fields": {
+        "name": "传媒"
+    },
+    "model": "AbroadPassApp.Major"
+},
+{
+    "fields": {
+        "name": "机械工程"
+    },
+    "model": "AbroadPassApp.Major"
+},
+{
+    "fields": {
+        "name": "生物工程/农业"
+    },
+    "model": "AbroadPassApp.Major"
+},
+{
+    "fields": {
+        "name": "动物学/植物学/兽医"
+    },
+    "model": "AbroadPassApp.Major"
+},
+{
+    "fields": {
+        "name": "计算机工程/电子工程/信息工程/网络工程/电子商务/科技创新"
+    },
+    "model": "AbroadPassApp.Major"
+}
+]
