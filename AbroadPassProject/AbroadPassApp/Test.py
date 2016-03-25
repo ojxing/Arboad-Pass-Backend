@@ -5,14 +5,14 @@ import json
 #-------------------------------Authentication-------------------------------#
 
 #--------login---------#
-# login = 'http://localhost:8000/api/v1/user/login/'
-# data1 = {'username':'ojxing5','password':'abc123'}
-# head = {'Content-type':'application/json'}
-# r1 = requests.post(login,json.dumps(data1),headers=head)
-# apikey = json.loads(r1.content)["api"]
-# print(r1.status_code)
-# print(r1.content)
-# print(r1.cookies)
+login = 'http://localhost:8000/api/v1/user/login/'
+data1 = {'username':'ojxing5','password':'abc123'}
+head = {'Content-type':'application/json'}
+r1 = requests.post(login,json.dumps(data1),headers=head)
+apikey = json.loads(r1.content)["api"]
+print(r1.status_code)
+print(r1.content)
+print(r1.cookies)
 
 
 
@@ -122,9 +122,17 @@ import json
 # print(r.cookies)
 
 #-------major list------#
-major_list = 'http://localhost:8000/api/v1/major/'
+# major_list = 'http://localhost:8000/api/v1/major/'
+# head = {'Content-type':'application/json'}
+# r = requests.get(major_list,headers=head)
+# print(r.status_code)
+# print(json.dumps(json.loads(r.content),indent=1,ensure_ascii=False))
+# print(r.cookies)
+
+#-------notification list------#
+major_list = 'http://localhost:8000/api/v1/notification/'
 head = {'Content-type':'application/json'}
-r = requests.get(major_list,headers=head)
+r = requests.get(major_list,headers=head,cookies={'sessionid':r1.cookies['sessionid'],'csrftoken':r1.cookies['csrftoken']})
 print(r.status_code)
 print(json.dumps(json.loads(r.content),indent=1,ensure_ascii=False))
 print(r.cookies)

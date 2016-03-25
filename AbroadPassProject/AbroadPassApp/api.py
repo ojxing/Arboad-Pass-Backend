@@ -11,7 +11,7 @@ from tastypie import fields
 from tastypie.utils import trailing_slash
 from tastypie.models import ApiKey,create_api_key
 from tastypie.http import HttpUnauthorized,HttpForbidden,HttpNotFound
-from models import Provider,NormalUser #create_user_profile
+from models import Provider,NormalUser,Notification #create_user_profile
 
 #create api key
 models.signals.post_save.connect(create_api_key, sender=User)
@@ -203,6 +203,15 @@ class NormalUserResource(ModelResource):
         return bundle
 
 
-
+class NotificationResource(ModelResource):
+    user = fields.ForeignKey(UserResource,'user')
+    class Meta:
+        queryset = Notification.objects.all()
+        resource_name = 'notification'
+        filtering = {
+            'user':ALL_WITH_RELATIONS
+        }
+        authorization = Authorization()
+        authentication = MultiAuthentication(SessionAuthentication(),ApiKeyAuthentication())
 
 

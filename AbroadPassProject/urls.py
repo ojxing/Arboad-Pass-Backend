@@ -16,12 +16,13 @@ Including another URLconf
 from django.conf.urls import url,include
 from django.contrib import admin
 from tastypie.api import Api
-from AbroadPassApp.api import NormalUserResource,UserResource,ProviderResource
+from AbroadPassApp.api import NormalUserResource,UserResource,ProviderResource,NotificationResource
 from AbroadPassApp.myapi.StaticResource import CountryResource,CityResource,SchoolResource,MajorResource
 v1_api = Api(api_name='v1')
 v1_api.register(NormalUserResource())
 v1_api.register(UserResource())
 v1_api.register(ProviderResource())
+v1_api.register(NotificationResource())
 
 v1_api.register(CountryResource())
 v1_api.register(CityResource())

@@ -3,6 +3,7 @@ from __future__ import unicode_literals
 from django.db import models
 from django.contrib.auth.models import User
 from django.db.models.signals import post_save
+from tastypie.utils.timezone import now
 # Create your models here.
 
 class NormalUser(models.Model):
@@ -65,6 +66,13 @@ class School(models.Model):
 
 class Major(models.Model):
     name = models.CharField(max_length=50)
+
+class Notification(models.Model):
+    user = models.ForeignKey(User)
+    create_date = models.DateTimeField(default=now())
+    content = models.TextField()
+    is_read = models.BooleanField(default=False)
+
 
 #profile auto-created when user register
 # def create_user_profile(sender,**kwargs):
