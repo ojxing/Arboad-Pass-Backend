@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
 from django.db import models
@@ -73,6 +74,38 @@ class Notification(models.Model):
     content = models.TextField()
     is_read = models.BooleanField(default=False)
 
+
+#商家展示：Trainee, 课程展示 Course
+class Trainee(models.Model):
+    user = models.OneToOneField(User,related_name='trainee')
+    name = models.CharField(max_length=30)
+    sub_title = models.CharField(max_length=30)
+    img_url = models.URLField(max_length=200)
+    score = models.CharField(max_length=10)
+    address = models.CharField(max_length=50)
+    tel = models.CharField(max_length=30)
+    mobile = models.CharField(max_length=30)
+    qq = models.CharField(max_length=30)
+    email = models.EmailField(max_length=30)
+    detail = models.TextField()
+    range = models.IntegerField(default=0)
+    is_recommend = models.BooleanField(default=False)
+    category = models.CharField(max_length=30)
+    sub_category = models.CharField(max_length=30)
+
+class Course(models.Model):
+    trainee = models.ForeignKey(Trainee)
+    name = models.CharField(max_length=30)
+    sub_title = models.CharField(max_length=30)
+    img_url = models.URLField(max_length=200)
+    score = models.CharField(max_length=10)
+    price = models.DecimalField(default=0,max_digits=5, decimal_places=2)
+    sell_num = models.IntegerField(default=0)
+    detail = models.TextField()
+    range = models.IntegerField(default=0)
+    is_recommend = models.BooleanField(default=False)
+    category = models.CharField(max_length=30)
+    sub_category = models.CharField(max_length=30)
 
 #profile auto-created when user register
 # def create_user_profile(sender,**kwargs):

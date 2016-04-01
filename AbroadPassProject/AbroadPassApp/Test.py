@@ -130,9 +130,27 @@ print(r1.cookies)
 # print(r.cookies)
 
 #-------notification list------#
-major_list = 'http://localhost:8000/api/v1/notification/'
+# major_list = 'http://localhost:8000/api/v1/notification/'
+# head = {'Content-type':'application/json'}
+# r = requests.get(major_list,headers=head,cookies={'sessionid':r1.cookies['sessionid'],'csrftoken':r1.cookies['csrftoken']})
+# print(r.status_code)
+# print(json.dumps(json.loads(r.content),indent=1,ensure_ascii=False))
+# print(r.cookies)
+
+
+#-------------------------------Trainee Management （商家）-------------------------------#
+#-------Add Trainee------#
+# trainee_url = 'http://localhost:8000/api/v1/trainee/'
+# head = {'Content-type':'application/json'}
+# data = {'name':'eastern','sub_title':'abc123','mobile':18588766631}  #type =>  normaluser or provider
+# r = requests.post(trainee_url,json.dumps(data),headers=head,cookies={'sessionid':r1.cookies['sessionid'],'csrftoken':r1.cookies['csrftoken']})
+# print(r.status_code)
+# print(r.content)
+
+#-------Trainee List------#
+trainee_list = 'http://localhost:8000/api/v1/trainee/'
 head = {'Content-type':'application/json'}
-r = requests.get(major_list,headers=head,cookies={'sessionid':r1.cookies['sessionid'],'csrftoken':r1.cookies['csrftoken']})
+r = requests.get(trainee_list,headers=head)
 print(r.status_code)
 print(json.dumps(json.loads(r.content),indent=1,ensure_ascii=False))
 print(r.cookies)
