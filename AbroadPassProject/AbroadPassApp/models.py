@@ -7,6 +7,31 @@ from django.db.models.signals import post_save
 from tastypie.utils.timezone import now
 # Create your models here.
 
+class Grade(models.Model):
+   user = models.ForeignKey(User)
+   gpa = models.CharField(max_length=5)
+   toefl_reading = models.CharField(max_length=5)
+   toefl_listening = models.CharField(max_length=5)
+   toefl_speaking = models.CharField(max_length=5)
+   toefl_writing = models.CharField(max_length=5)
+   toefl_total = models.CharField(max_length=5)
+   gre_verbal = models.CharField(max_length=5)
+   gre_quantitative = models.CharField(max_length=5)
+   gre_writing = models.CharField(max_length=5)
+   gre_total = models.CharField(max_length=5)
+   gmat = models.CharField(max_length=5)     # three parts?
+   ielts_reading = models.CharField(max_length=5)
+   ielts_listening = models.CharField(max_length=5)
+   ielts_speaking = models.CharField(max_length=5)
+   ielts_writing = models.CharField(max_length=5)
+   ielts_total = models.CharField(max_length=5)
+
+class Goal(models.Model):
+   user = models.ForeignKey(User)
+   country = models.CharField(max_length=20)
+   city = models.CharField(max_length=10)
+   school = models.CharField(max_length=50)
+
 class NormalUser(models.Model):
     user = models.OneToOneField(User,related_name='normaluser')
     user_realname = models.CharField(max_length=10,null=False,default="")
@@ -21,7 +46,6 @@ class NormalUser(models.Model):
     locate_city = models.CharField(max_length=10)
     major = models.CharField(max_length=20)
     school = models.CharField(max_length=50)
-    gpa = models.CharField(max_length=5)
 
 class Provider(models.Model):
     user = models.OneToOneField(User,related_name='provider')
@@ -37,9 +61,58 @@ class Provider(models.Model):
     locate_city = models.CharField(max_length=10)
     major = models.CharField(max_length=20)
     school = models.CharField(max_length=50)
-    gpa = models.CharField(max_length=5)
 
+#Application
+class OnlineApply(models.Model):
+   school = models.CharField(max_length=50)
+   major = models.CharField(max_length=50)
+   school_link = models.URLField(max_length=200)
+   major_link = models.URLField(max_length=200)
+   application_link = models.URLField(max_length=200)
+   username = models.CharField(max_length=50)
+   password = models.CharField(max_length=50)
+   status = models.IntegerField(default=0)  # 0: false, 1: create(, 2: approve)
+class MaterialApply(models.Model):
+   cv = models.FileField(upload_to="/Material/CV")
+   ps = models.FileField(upload_to="/Material/PS")
+   recommend_letter1 = models.FileField(upload_to="/Material/RL")
+   recommend_letter2 = models.FileField(upload_to="/Material/RL")
+   recommend_letter3 = models.FileField(upload_to="/Material/RL")
 
+   recommend_letter1_status = models.IntegerField(default=0)  # 0: false, 1: submit, 2: approve
+   recommend_letter2_status = models.IntegerField(default=0)
+   recommend_letter3_status = models.IntegerField(default=0)
+   cv_status = models.IntegerField(default=0)
+   ps_status = models.IntegerField(default=0)
+
+class VisaApply(models.Model):
+   create_time = models.DateTimeField(auto_now_add=True)
+   status = models.IntegerField(default=0)  # 0: false, 1: create(, 2: approve)
+
+class HouseAndTicketApply(models.Model):
+   create_time = models.DateTimeField(auto_now_add=True)
+   status = models.IntegerField(default=0)  # 0: false, 1: create(, 2: approve)
+
+class Application(models.Model):
+   normaluser = models.OneToOneField(NormalUser,related_name='application')
+   provider= models.OneToOneField(Provider,related_name='application')
+   onlineapply = models.OneToOneField(OnlineApply,related_name='application')
+   materialapply = models.OneToOneField(MaterialApply,related_name='application')
+   visaapply = models.OneToOneField(VisaApply,related_name='application')
+   houseticketapply = models.OneToOneField(HouseAndTicketApply,related_name='application')
+   onlineapply_status = models.IntegerField(default=0)
+   cvapply_status = models.IntegerField(default=0)
+   hardmaterialapply_status = models.IntegerField(default=0)
+   visaapply_status = models.IntegerField(default=0)
+   houseticketapply_status = models.IntegerField(default=0)
+   create_time = models.DateTimeField(auto_now_add=True)
+
+class Article(models.Model):
+    provider = models.ForeignKey(Provider)
+    create_date = models.DateTimeField(auto_now_add=True)
+    content = models.TextField()
+    like = models.IntegerField(default=0)
+    read = models.IntegerField(default=0)
 
 #Country,City and School List
 class CountryManager(models.Manager):
@@ -74,38 +147,6 @@ class Notification(models.Model):
     content = models.TextField()
     is_read = models.BooleanField(default=False)
 
-
-#商家展示：Trainee, 课程展示 Course
-class Trainee(models.Model):
-    user = models.OneToOneField(User,related_name='trainee')
-    name = models.CharField(max_length=30)
-    sub_title = models.CharField(max_length=30)
-    img_url = models.URLField(max_length=200)
-    score = models.CharField(max_length=10)
-    address = models.CharField(max_length=50)
-    tel = models.CharField(max_length=30)
-    mobile = models.CharField(max_length=30)
-    qq = models.CharField(max_length=30)
-    email = models.EmailField(max_length=30)
-    detail = models.TextField()
-    range = models.IntegerField(default=0)
-    is_recommend = models.BooleanField(default=False)
-    category = models.CharField(max_length=30)
-    sub_category = models.CharField(max_length=30)
-
-class Course(models.Model):
-    trainee = models.ForeignKey(Trainee)
-    name = models.CharField(max_length=30)
-    sub_title = models.CharField(max_length=30)
-    img_url = models.URLField(max_length=200)
-    score = models.CharField(max_length=10)
-    price = models.DecimalField(default=0,max_digits=5, decimal_places=2)
-    sell_num = models.IntegerField(default=0)
-    detail = models.TextField()
-    range = models.IntegerField(default=0)
-    is_recommend = models.BooleanField(default=False)
-    category = models.CharField(max_length=30)
-    sub_category = models.CharField(max_length=30)
 
 #profile auto-created when user register
 # def create_user_profile(sender,**kwargs):

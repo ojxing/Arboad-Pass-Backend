@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from django.contrib.auth import authenticate,login,logout
 from django.db import models
 from django.conf.urls import url
@@ -11,12 +12,36 @@ from tastypie import fields
 from tastypie.utils import trailing_slash
 from tastypie.models import ApiKey,create_api_key
 from tastypie.http import HttpUnauthorized,HttpForbidden,HttpNotFound
-from models import Provider,NormalUser,Notification #create_user_profile
+from models import Provider,NormalUser,Notification,Article #create_user_profile
+from django.http import HttpResponse
+from tastypie import resources
 
 #create api key
 models.signals.post_save.connect(create_api_key, sender=User)
 
-class GroupResource(ModelResource):
+def build_content_type(format, encoding='utf-8'):
+    """
+    Appends character encoding to the provided format if not already present.
+    """
+    if 'charset' in format:
+        return format
+
+    return "%s; charset=%s" % (format, encoding)
+
+class MyModelResource(resources.ModelResource):
+    def create_response(self, request, data, response_class=HttpResponse, **response_kwargs):
+        """
+        Extracts the common "which-format/serialize/return-response" cycle.
+
+        Mostly a useful shortcut/hook.
+        """
+        desired_format = self.determine_format(request)
+        serialized = self.serialize(request, data, desired_format)
+
+        return response_class(content=serialized, content_type=build_content_type(desired_format), **response_kwargs)
+
+
+class GroupResource(MyModelResource):
     class Meta:
         queryset = Group.objects.all()
         resource_name = 'group'
@@ -27,7 +52,7 @@ class GroupResource(ModelResource):
             'name': ALL,
         }
 
-class UserResource(ModelResource):
+class UserResource(MyModelResource):
     groups = fields.ToManyField(GroupResource, 'groups',blank=True)
     class Meta:
         queryset = User.objects.all()
@@ -46,10 +71,11 @@ class UserResource(ModelResource):
             url(r"(?P<resource_name>%s)/logout%s$"%(self._meta.resource_name,trailing_slash()),self.wrap_view('logout'),name="api_logout"),
             url(r"(?P<resource_name>%s)/register%s$"%(self._meta.resource_name,trailing_slash()),self.wrap_view('register'),name="api_register"),
             url(r"(?P<resource_name>%s)/changepassword%s$"%(self._meta.resource_name,trailing_slash()),self.wrap_view('changepassword'),name="api_changepassword"),
+            url(r"(?P<resource_name>%s)/userexist%s$"%(self._meta.resource_name,trailing_slash()),self.wrap_view('userexist'),name="api_userexist"),
         ]
-    #Register as a user
+    #注册
     def register(self, request, **kwargs):
-        self.method_check(request,allowed=['post'])
+        self.method_check(request,allowed=['post','options'])
 
         data = self.deserialize(request,request.body,format=request.META.get('CONTENT_TYPE','application/json'))
         username = data.get('username','')
@@ -74,9 +100,14 @@ class UserResource(ModelResource):
             normaluser_g.user_set.add(new_user)
             normaluser = NormalUser(user=new_user)
             normaluser.save()
-        return self.create_response(request,{'success':True})
 
-    #Return group of user or provider
+        response = self.create_response(request,{'success':True})
+    	response['Access-Control-Allow-Origin'] = "*"
+        response['Access-Control-Allow-Methods'] = "GET, PUT, POST, PATCH"
+        return response
+
+
+    #登录Return group of user or provider
     def login(self,request,**kwargs):
         self.method_check(request,allowed=['post'])
         data = self.deserialize(request,request.body,format=request.META.get('CONTENT_TYPE','application/json'))
@@ -98,6 +129,7 @@ class UserResource(ModelResource):
         else:
             return self.create_response(request,{'success':False,'reason':'Invalid Password',},HttpUnauthorized)
 
+    #注销
     def logout(self,request,**kwargs):
         self.method_check(request,allowed=['get'])
         if request.user and request.user.is_authenticated():
@@ -105,7 +137,18 @@ class UserResource(ModelResource):
             return self.create_response(request,{'success':True})
         else:
             return self.create_response(request,{'success':False},HttpUnauthorized)
+    #用户名存在
+    def userexist(self,request,**kwargs):
+        self.method_check(request,allowed=['get'])
+        #data = self.deserialize(request,request.body,format=request.META.get('CONTENT_TYPE','application/json'))
+        #username = request.get('username','')
+        username = request.GET['username']
+        if User.objects.filter(username=username).exists():
+            return self.create_response(request,{'result':True},HttpForbidden)
+        else:
+            return self.create_response(request,{'result':False},HttpUnauthorized)
 
+    #修改密码
     def changepassword(self,request,**kwargs):
         self.method_check(request,allowed=['post'])
         data = self.deserialize(request,request.body,format=request.META.get('CONTENT_TYPE','application/json'))
@@ -124,7 +167,7 @@ class UserResource(ModelResource):
         else:
             return self.create_response(request,{'success':user.id,'reason':'Time out! Login again please!'},HttpForbidden)
 
-class ProviderResource(ModelResource):
+class ProviderResource(MyModelResource):
     class Meta:
         queryset = Provider.objects.all()
         resource_name ='provider'
@@ -164,7 +207,7 @@ class ProviderResource(ModelResource):
         return bundle
 
 
-class NormalUserResource(ModelResource):
+class NormalUserResource(MyModelResource):
 
     class Meta:
         queryset = NormalUser.objects.all()
@@ -202,8 +245,56 @@ class NormalUserResource(ModelResource):
         bundle.data['userid'] = bundle.obj.user.id
         return bundle
 
+class ArticleResource(MyModelResource):
+    provider = fields.ForeignKey(ProviderResource,'provider')
 
-class NotificationResource(ModelResource):
+    def prepend_urls(self):
+        return [
+            url(r"(?P<resource_name>%s)/post%s$"%(self._meta.resource_name,trailing_slash()),self.wrap_view('post_article'),name="api_post_article"),
+            url(r"(?P<resource_name>%s)/comment%s$"%(self._meta.resource_name,trailing_slash()),self.wrap_view('comment_article'),name="api_comment_article"),
+            url(r"(?P<resource_name>%s)/like%s$"%(self._meta.resource_name,trailing_slash()),self.wrap_view('like_article'),name="api_like_article"),
+        ]
+
+    #文章点赞
+    def like_article(self,request, **kwargs):
+        self.method_check(request,allowed=['post','put'])
+        id = request.GET['id']
+        try:
+            article = Article.objects.get(pk =id)
+            article.like = article.like + 1
+            article.save()
+            return self.create_response(request,{'success':True,'reason':'Article Like'})
+        except Article.DoesNotExist:
+            return self.create_response(request,{'success':False,'reason':'Article Not Existed!'},HttpNotFound)
+
+    #文章评论
+    def comment_article(self,request, **kwargs):
+        pass
+    #文章发布
+    def post_article(self,request, **kwargs):
+        self.method_check(request,allowed=['post','put'])
+        data = self.deserialize(request,request.body,format=request.META.get('CONTENT_TYPE','application/json'))
+        content = data.get('content','')
+        user = request.user
+        try:
+            provider = Provider.objects.get(user_id = user.id)
+            article = Article.objects.create(content=content, provider=provider)
+            article.save()
+        except Provider.DoesNotExist:
+            return self.create_response(request,{'success':False,'reason':'You are not a Provider!'})
+
+        return self.create_response(request,{'success':False,'reason':'Artical Post Success!',})
+
+    class Meta:
+        queryset = Article.objects.all()
+        resource_name = 'article'
+        filtering = {
+            'provider':ALL_WITH_RELATIONS
+        }
+        authorization = Authorization()
+        authentication = MultiAuthentication(SessionAuthentication(),ApiKeyAuthentication())
+
+class NotificationResource(MyModelResource):
     user = fields.ForeignKey(UserResource,'user')
     class Meta:
         queryset = Notification.objects.all()
