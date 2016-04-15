@@ -50,9 +50,12 @@ MIDDLEWARE_CLASSES = [
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'AbroadPassProject.AbroadPassApp.middleware.crossdomainxhr.XsSharing',
 ]
 
 ROOT_URLCONF = 'AbroadPassProject.urls'
+XS_SHARING_ALLOWED_ORIGINS = '*'
+XS_SHARING_ALLOWED_METHODS = ['POST','GET','OPTIONS', 'PUT', 'DELETE']
 
 TEMPLATES = [
     {

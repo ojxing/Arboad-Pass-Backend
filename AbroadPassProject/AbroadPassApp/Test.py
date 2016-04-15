@@ -14,21 +14,31 @@ print(r1.status_code)
 print(r1.content)
 print(r1.cookies['sessionid'])
 
+# content = u'''
+# '''
 # article = 'http://localhost:8000/api/v1/article/post/'
-# data1 = {'content':'abctest','read':15}
+# data1 = {'title':u'从大陆与香港一年级语文课本，看两地差距','content':content,'read':356}
 # head = {'Content-type':'application/json'}
 # r = requests.post(article,json.dumps(data1),headers=head,cookies={'sessionid':r1.cookies['sessionid'],'csrftoken':r1.cookies['csrftoken']})
 # print(r.status_code)
 # print(r.content)
 # print(r.cookies)
 
-article = 'http://localhost:8000/api/v1/article/like/?id=2'
+article = 'http://localhost:8000/api/v1/article/list/'
 data1 = {'content':'abctest','read':15}
 head = {'Content-type':'application/json'}
-r = requests.post(article,json.dumps(data1),headers=head,cookies={'sessionid':r1.cookies['sessionid'],'csrftoken':r1.cookies['csrftoken']})
+r = requests.get(article,json.dumps(data1),headers=head,cookies={'sessionid':r1.cookies['sessionid'],'csrftoken':r1.cookies['csrftoken']})
 print(r.status_code)
 print(r.content)
 print(r.cookies)
+
+# article = 'http://localhost:8000/api/v1/article/like/?id=2'
+# data1 = {'content':'abctest','read':15}
+# head = {'Content-type':'application/json'}
+# r = requests.post(article,json.dumps(data1),headers=head,cookies={'sessionid':r1.cookies['sessionid'],'csrftoken':r1.cookies['csrftoken']})
+# print(r.status_code)
+# print(r.content)
+# print(r.cookies)
 
 #---------register---------#
 # reg_url = 'http://localhost:8000/api/v1/user/register/'

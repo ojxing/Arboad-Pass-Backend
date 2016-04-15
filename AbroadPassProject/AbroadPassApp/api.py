@@ -11,7 +11,8 @@ from tastypie.authentication import ApiKeyAuthentication,SessionAuthentication,M
 from tastypie import fields
 from tastypie.utils import trailing_slash
 from tastypie.models import ApiKey,create_api_key
-from tastypie.http import HttpUnauthorized,HttpForbidden,HttpNotFound
+from tastypie.http import HttpUnauthorized,HttpForbidden,HttpNotFound,HttpAccepted
+from tastypie.serializers import Serializer
 from models import Provider,NormalUser,Notification,Article #create_user_profile
 from django.http import HttpResponse
 from tastypie import resources
@@ -37,8 +38,9 @@ class MyModelResource(resources.ModelResource):
         """
         desired_format = self.determine_format(request)
         serialized = self.serialize(request, data, desired_format)
-
-        return response_class(content=serialized, content_type=build_content_type(desired_format), **response_kwargs)
+        response =response_class(content=serialized, content_type=build_content_type(desired_format), **response_kwargs)
+        response['Access-Control-Allow-Origin'] = '*'
+        return response
 
 
 class GroupResource(MyModelResource):
@@ -59,11 +61,13 @@ class UserResource(MyModelResource):
         resource_name = 'user'
         fields = {'username','email','resource_uri'}
         allowed_method =['get','post','put','patch']
+        serializer = Serializer(formats=['json', 'jsonp', 'xml', 'yaml', 'plist'])
         authentication = SessionAuthentication()
         authorization = Authorization()
         filtering = {
             'groups':ALL_WITH_RELATIONS
         }
+
 
     def override_urls(self):
         return [
@@ -253,7 +257,18 @@ class ArticleResource(MyModelResource):
             url(r"(?P<resource_name>%s)/post%s$"%(self._meta.resource_name,trailing_slash()),self.wrap_view('post_article'),name="api_post_article"),
             url(r"(?P<resource_name>%s)/comment%s$"%(self._meta.resource_name,trailing_slash()),self.wrap_view('comment_article'),name="api_comment_article"),
             url(r"(?P<resource_name>%s)/like%s$"%(self._meta.resource_name,trailing_slash()),self.wrap_view('like_article'),name="api_like_article"),
+            url(r"(?P<resource_name>%s)/list%s$"%(self._meta.resource_name,trailing_slash()),self.wrap_view('list_article'),name="api_list_article"),
         ]
+
+    def dehydrate(self, bundle):
+        #bundle.obj.slug = str(bundle.data['content'])[1:40]
+        bundle.data['brief'] = bundle.data['content'][0:40] + '......'
+        return bundle
+
+    def list_article(self,request,**kwargs):
+        obj = self.cached_obj_get(request=request, **self.remove_api_resource_names(kwargs))
+        return self.create_response(request,obj)
+        #return self.dispatch_list(request)
 
     #文章点赞
     def like_article(self,request, **kwargs):
@@ -275,10 +290,11 @@ class ArticleResource(MyModelResource):
         self.method_check(request,allowed=['post','put'])
         data = self.deserialize(request,request.body,format=request.META.get('CONTENT_TYPE','application/json'))
         content = data.get('content','')
+        title = data.get('title','')
         user = request.user
         try:
             provider = Provider.objects.get(user_id = user.id)
-            article = Article.objects.create(content=content, provider=provider)
+            article = Article.objects.create(content=content,title=title, provider=provider)
             article.save()
         except Provider.DoesNotExist:
             return self.create_response(request,{'success':False,'reason':'You are not a Provider!'})

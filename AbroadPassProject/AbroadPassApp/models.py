@@ -110,6 +110,7 @@ class Application(models.Model):
 class Article(models.Model):
     provider = models.ForeignKey(Provider)
     create_date = models.DateTimeField(auto_now_add=True)
+    title = models.CharField(max_length=50,default="")
     content = models.TextField()
     like = models.IntegerField(default=0)
     read = models.IntegerField(default=0)
