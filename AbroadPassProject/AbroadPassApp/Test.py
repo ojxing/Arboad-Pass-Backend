@@ -5,14 +5,51 @@ import json
 #-------------------------------Authentication-------------------------------#
 
 #--------login---------#
-login = 'http://localhost:8000/api/v1/user/login/'
-data1 = {'username':'ojxing2','password':'abc123'}
+login = 'http://121.42.178.246:8008/api/v1/user/login/'
+data1 = {'username':'ojxing3','password':'abc123'}
 head = {'Content-type':'application/json'}
 r1 = requests.post(login,json.dumps(data1),headers=head)
 apikey = json.loads(r1.content)["api"]
 print(r1.status_code)
 print(r1.content)
 print(r1.cookies['sessionid'])
+
+#新建申请
+# application = 'http://121.42.178.246:8008/api/v1/application/generate/?username=ojxing3&api_key=a7f83d154c4d5770d5dd0f8cdbf041766d6edfc5'
+# data1 = {'providerId':11}
+# head = {'Content-type':'application/json'}
+# #r = requests.post(application,json.dumps(data1),headers=head,cookies={'sessionid':r1.cookies['sessionid'],'csrftoken':r1.cookies['csrftoken']})
+# r = requests.post(application,json.dumps(data1),headers=head)
+# print(r.status_code)
+# print(r.content)
+# print(r.cookies)
+
+#查询申请
+application = 'http://121.42.178.246:8008/api/v1/application/hasapply/?username=ojxing3&api_key=a7f83d154c4d5770d5dd0f8cdbf041766d6edfc5'
+data1 = {'providerId':11}
+head = {'Content-type':'application/json'}
+#r = requests.post(application,json.dumps(data1),headers=head,cookies={'sessionid':r1.cookies['sessionid'],'csrftoken':r1.cookies['csrftoken']})
+r = requests.post(application,json.dumps(data1),headers=head)
+print(r.status_code)
+print(r.content)
+print(r.cookies)
+
+#查看申请列表
+# application = 'http://121.42.178.246:8008/api/v1/application/?username=ojxing2&api_key=557b28e27e7b0219f00f8c2ba1024b57148da0b9'
+# data1 = {'providerId':11}
+# head = {'Content-type':'application/json'}
+# #r = requests.post(application,json.dumps(data1),headers=head,cookies={'sessionid':r1.cookies['sessionid'],'csrftoken':r1.cookies['csrftoken']})
+# r = requests.get(application,json.dumps(data1),headers=head)
+# print(r.status_code)
+# print(json.dumps(json.loads(r.content),indent=1))
+# print(r.cookies)
+
+#更改申请状态
+# application = 'http://121.42.178.246:8008/api/v1/application/edit_status/?username=ojxing2&api_key=557b28e27e7b0219f00f8c2ba1024b57148da0b9'
+# data1 = {'applicationId':3,'cvapply_status':0}
+# head = {'Content-type':'application/json'}
+# r = requests.put(application,json.dumps(data1),headers=head)
+
 
 # content = u'''
 # '''
@@ -24,13 +61,14 @@ print(r1.cookies['sessionid'])
 # print(r.content)
 # print(r.cookies)
 
-article = 'http://localhost:8000/api/v1/article/list/'
-data1 = {'content':'abctest','read':15}
-head = {'Content-type':'application/json'}
-r = requests.get(article,json.dumps(data1),headers=head,cookies={'sessionid':r1.cookies['sessionid'],'csrftoken':r1.cookies['csrftoken']})
-print(r.status_code)
-print(r.content)
-print(r.cookies)
+# article = 'http://121.42.178.246:8008/api/v1/article/list/'
+# data1 = {'content':'abctest','read':15}
+# head = {'Content-type':'application/json'}
+# #r = requests.get(article,json.dumps(data1),headers=head,cookies={'sessionid':r1.cookies['sessionid'],'csrftoken':r1.cookies['csrftoken']})
+# r = requests.post(article,json.dumps(data1),headers=head)
+# print(r.status_code)
+# print(r.content)
+# print(r.cookies)
 
 # article = 'http://localhost:8000/api/v1/article/like/?id=2'
 # data1 = {'content':'abctest','read':15}
