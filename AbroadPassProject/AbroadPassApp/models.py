@@ -46,6 +46,8 @@ class NormalUser(models.Model):
     locate_city = models.CharField(max_length=10)
     major = models.CharField(max_length=20)
     school = models.CharField(max_length=50)
+    avatar = models.CharField(max_length=100,null=True)
+    headline = models.CharField(max_length=50,default="")
 
 class Provider(models.Model):
     user = models.OneToOneField(User,related_name='provider')
@@ -61,6 +63,8 @@ class Provider(models.Model):
     locate_city = models.CharField(max_length=10)
     major = models.CharField(max_length=20)
     school = models.CharField(max_length=50)
+    avatar = models.CharField(max_length=100, null=True)
+    headline = models.CharField(max_length=50,default="")
 
 #Application
 class OnlineApply(models.Model):
@@ -94,12 +98,13 @@ class HouseAndTicketApply(models.Model):
    status = models.IntegerField(default=0)  # 0: false, 1: create(, 2: approve)
 
 class Application(models.Model):
-   normaluser = models.OneToOneField(NormalUser,related_name='application')
-   provider= models.OneToOneField(Provider,related_name='application')
+   normaluser = models.ForeignKey(NormalUser,related_name='application')
+   provider= models.ForeignKey(Provider,related_name='application')
    onlineapply = models.OneToOneField(OnlineApply,related_name='application')
    materialapply = models.OneToOneField(MaterialApply,related_name='application')
    visaapply = models.OneToOneField(VisaApply,related_name='application')
    houseticketapply = models.OneToOneField(HouseAndTicketApply,related_name='application')
+   app_status = models.IntegerField(default=0)
    onlineapply_status = models.IntegerField(default=0)
    cvapply_status = models.IntegerField(default=0)
    hardmaterialapply_status = models.IntegerField(default=0)
@@ -112,7 +117,7 @@ class Article(models.Model):
     create_date = models.DateTimeField(auto_now_add=True)
     title = models.CharField(max_length=50,default="")
     content = models.TextField()
-    like = models.IntegerField(default=0)
+    likes = models.IntegerField(default=0)
     read = models.IntegerField(default=0)
 
 #Country,City and School List

@@ -10,15 +10,18 @@ from tastypie.authorization import Authorization
 from tastypie.authentication import ApiKeyAuthentication,SessionAuthentication,MultiAuthentication
 from tastypie import fields
 from tastypie.utils import trailing_slash
+from tastypie.compat import get_user_model, get_username_field
 from tastypie.models import ApiKey,create_api_key
 from tastypie.http import HttpUnauthorized,HttpForbidden,HttpNotFound,HttpAccepted
 from tastypie.serializers import Serializer
-from models import Provider,NormalUser,Notification,Article #create_user_profile
+from models import Provider,NormalUser,Notification,Article,Application,OnlineApply,MaterialApply,VisaApply,HouseAndTicketApply #create_user_profile
 from django.http import HttpResponse
 from tastypie import resources
 
 #create api key
 models.signals.post_save.connect(create_api_key, sender=User)
+#status dict
+status_enum = {1:'准备回应',2:'马上回应',3:'已经回应'}
 
 def build_content_type(format, encoding='utf-8'):
     """
@@ -176,7 +179,7 @@ class ProviderResource(MyModelResource):
         queryset = Provider.objects.all()
         resource_name ='provider'
         authorization = Authorization()
-        authentication = MultiAuthentication(SessionAuthentication(),ApiKeyAuthentication())
+        # authentication = MultiAuthentication(SessionAuthentication(),ApiKeyAuthentication())
         allowed_method =['get','post','put','patch']
         detail_allowed_methods =['get','post','put','patch']
 
@@ -250,7 +253,7 @@ class NormalUserResource(MyModelResource):
         return bundle
 
 class ArticleResource(MyModelResource):
-    provider = fields.ForeignKey(ProviderResource,'provider')
+    provider = fields.ForeignKey(ProviderResource,'provider',full=True)
 
     def prepend_urls(self):
         return [
@@ -261,14 +264,16 @@ class ArticleResource(MyModelResource):
         ]
 
     def dehydrate(self, bundle):
-        #bundle.obj.slug = str(bundle.data['content'])[1:40]
-        bundle.data['brief'] = bundle.data['content'][0:40] + '......'
+     	is_brief =  bundle.request.GET.get('is_brief')
+        if is_brief != None and is_brief == 'True':
+            bundle.data['brief'] = bundle.data['content'][0:40] + '......'
+            del bundle.data['content']
         return bundle
 
     def list_article(self,request,**kwargs):
-        obj = self.cached_obj_get(request=request, **self.remove_api_resource_names(kwargs))
-        return self.create_response(request,obj)
-        #return self.dispatch_list(request)
+        # obj = self.cached_obj_get(request=request, **self.remove_api_resource_names(kwargs))
+        # return self.create_response(request,obj)
+        return self.dispatch_list(request)
 
     #文章点赞
     def like_article(self,request, **kwargs):
@@ -276,7 +281,7 @@ class ArticleResource(MyModelResource):
         id = request.GET['id']
         try:
             article = Article.objects.get(pk =id)
-            article.like = article.like + 1
+            article.likes = article.likes + 1
             article.save()
             return self.create_response(request,{'success':True,'reason':'Article Like'})
         except Article.DoesNotExist:
@@ -308,7 +313,7 @@ class ArticleResource(MyModelResource):
             'provider':ALL_WITH_RELATIONS
         }
         authorization = Authorization()
-        authentication = MultiAuthentication(SessionAuthentication(),ApiKeyAuthentication())
+        authentication = SessionAuthentication()
 
 class NotificationResource(MyModelResource):
     user = fields.ForeignKey(UserResource,'user')
@@ -321,4 +326,138 @@ class NotificationResource(MyModelResource):
         authorization = Authorization()
         authentication = MultiAuthentication(SessionAuthentication(),ApiKeyAuthentication())
 
+class ApplicationResource(MyModelResource):
+    normaluser = fields.ForeignKey(NormalUserResource,'normaluser')
+    provider = fields.ForeignKey(ProviderResource, 'provider')
+    class Meta:
+        queryset = Application.objects.all()
+        resource_name = 'application'
+        authorization = Authorization()
+        authentication = ApiKeyAuthentication()
+        allowed_method = ['get', 'post', 'put', 'patch']
+        detail_allowed_methods = ['get', 'post', 'put', 'patch']
 
+    def override_urls(self):
+        return [
+            url(r"(?P<resource_name>%s)/generate%s$" % (self._meta.resource_name, trailing_slash()),
+                self.wrap_view('generate'), name="api_application_generate"),
+            url(r"(?P<resource_name>%s)/list%s$" % (self._meta.resource_name, trailing_slash()),
+                self.wrap_view('list'), name="api_application_list"),
+            url(r"(?P<resource_name>%s)/edit_app%s$" % (self._meta.resource_name, trailing_slash()),
+                self.wrap_view('edit_app'), name="api_application_edit"),
+            url(r"(?P<resource_name>%s)/hasapply%s$" % (self._meta.resource_name, trailing_slash()),
+                self.wrap_view('hasapply'), name="api_application_hasapply"),
+            url(r"(?P<resource_name>%s)/get_status%s$" % (self._meta.resource_name, trailing_slash()),
+                self.wrap_view('get_status'), name="api_application_get_status"),
+            url(r"(?P<resource_name>%s)/edit_status%s$" % (self._meta.resource_name, trailing_slash()),
+                self.wrap_view('edit_app_status'), name="api_application_edit"),
+        ]
+
+    #编辑Application各个阶段状态
+    def edit_app_status(self, request, **kwargs):
+        self.method_check(request, allowed=['post', 'put'])
+        self.is_authenticated(request)
+        data = self.deserialize(request, request.body, format=request.META.get('CONTENT_TYPE', 'application/json'))
+        applicationId = data.get('appid', '')
+        onlineapply_status = data.get('onlineapply', '')
+        materialapply_status = data.get('materialapply', '')
+        visaapply_status = data.get('visaapply', '')
+        houseticketapply_status = data.get('houseticketapply', '')
+
+        try:
+            app = Application.objects.get(pk=applicationId)
+        except Application.DoesNotExist:
+            return self.create_response(request, {'success': False, 'reason': 'Application Not Existed!'}, HttpNotFound)
+        if onlineapply_status != '':
+        	app.onlineapply.status = int(onlineapply_status)
+        	app.onlineapply.save()
+        if materialapply_status !='':
+        	app.materialapply.status = int(materialapply_status)
+        	app.materialapply.save()
+        if visaapply_status != '':
+        	app.visaapply.status = int(visaapply_status)
+        	app.visaapply.save()
+        if houseticketapply_status != '':
+        	app.houseticketapply.status = int(houseticketapply_status)
+        	app.houseticketapply.save()
+
+        return self.create_response(request, {'success': True, 'reason': 'Application Status Modified!'})
+
+    #获取Application各个阶段状态
+    def get_status(self, request, **kwargs):
+        self.is_authenticated(request)
+        appId = request.GET['appid']
+        user = request.user
+        app = Application.objects.get(pk = appId)
+        requestset = {}
+        requestset['OnlineApply'] = app.onlineapply.status
+        requestset['MaterialApply'] = app.materialapply.cv_status
+        requestset['VisaApply'] = app.visaapply.status
+        requestset['HouseAndTicketApply'] = app.houseticketapply.status
+        print app.visaapply.id
+        return self.create_response(request, {'success': True, 'result':requestset })
+
+    #查询User 和 Provider 是否有Application
+    def hasapply (self, request, **kwargs):
+        self.method_check(request, allowed=['post', 'options'])
+        self.is_authenticated(request)
+        data = self.deserialize(request, request.body, format=request.META.get('CONTENT_TYPE', 'application/json'))
+        providerId = data.get('providerId', '')
+        user = request.user
+        normaluser = NormalUser.objects.get(user_id=user.id)
+        provider = Provider.objects.get(user_id=providerId)
+
+        if Application.objects.filter(normaluser=normaluser, provider=provider).exists():
+            return self.create_response(request, {'success': False, 'reason': 'Application Existed!'})
+        return self.create_response(request, {'success': True, 'reason': 'Application Not Existed!'})
+
+    # 生成application
+    def generate(self, request, **kwargs):
+        self.method_check(request, allowed=['post', 'options'])
+        self.is_authenticated(request)
+        data = self.deserialize(request, request.body, format=request.META.get('CONTENT_TYPE', 'application/json'))
+        providerId = data.get('providerId', '')
+
+        user = request.user
+        normaluser = NormalUser.objects.get(user_id = user.id)
+        provider = Provider.objects.get(user_id = providerId)
+
+        if Application.objects.filter(normaluser = normaluser,provider = provider).exists():
+        	return self.create_response(request, {'success': False, 'reason': 'Application Existed!'})
+
+        onlineapply = OnlineApply.objects.create()
+        materialapply = MaterialApply.objects.create()
+        visaapply = VisaApply.objects.create()
+        houseticketapply = HouseAndTicketApply.objects.create()
+        application = Application.objects.create(normaluser=normaluser, provider = provider,onlineapply = onlineapply,materialapply=materialapply,visaapply=visaapply,houseticketapply=houseticketapply)
+
+        onlineapply.save()
+        materialapply.save()
+        visaapply.save()
+        houseticketapply.save()
+        application.save()
+
+        return self.create_response(request, {'success': True, 'reason': 'Create Application Success'})
+    def list(self,request,**kwargs):
+        self.method_check(request, allowed=['post', 'options','get'])
+        self.is_authenticated(request)
+
+    def edit_app(self, request, **kwargs):
+        self.method_check(request, allowed=['post', 'put'])
+        self.is_authenticated(request)
+        data = self.deserialize(request, request.body, format=request.META.get('CONTENT_TYPE', 'application/json'))
+        applicationId = data.get('applicationId', '')
+        try:
+            app = Application.objects.get(pk=applicationId)
+        except Application.DoesNotExist:
+            return self.create_response(request, {'success': False, 'reason': 'Application Not Existed!'}, HttpNotFound)
+        return super(ApplicationResource, self).put_detail(request, pk=app.id)
+
+    # def show_user_profile(self, request, **kwargs):
+    #     user = request.user
+    #     try:
+    #         profile = NormalUser.objects.get(user_id=user.id)
+    #         if user and not user.is_anonymous():
+    #             return self.dispatch_detail(request, pk=profile.id)
+    #     except NormalUser.DoesNotExist:
+    #         return self.create_response(request, {'success': False, 'reason': 'User Not Existed!'}, HttpNotFound)
