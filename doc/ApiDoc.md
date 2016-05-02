@@ -128,3 +128,51 @@ Method:GET
 Url:   http://localhost:8000/api/v1/major/
 Response: major category list
 ```
+
+<br/><br/>
+## 4.申请流程状态管理（请求结尾带上username和api_key）
+###查看user和Provider是否已有application
+```
+Method:POST
+Url:   http://121.42.178.246:8008/api/v1/application/hasapply/
+Body： {'providerId':11}
+Response:{'success':ture,'reason':''}
+```
+
+###生成application
+```
+Method:POST
+Url:   http://121.42.178.246:8008/api/v1/application/generate/
+Body： {'providerId':11}
+Response:{'success':ture,'reason':'Create Application Success'}
+```
+
+###查看user的所有application
+```
+Method:GET
+Url:   http://121.42.178.246:8008/api/v1/application/
+Response:application list
+```
+
+###查看user某一application的所有流程的状态
+```
+Method:GET
+Url:   http://121.42.178.246:8008/api/v1/application/get_status/?appid=3
+Response:{'success':ture,'OnlineApply':0,'MaterialApply':0,'VisaApply':0,'HouseAndTicketApply':0}
+```
+
+###更改application某一流程的状态
+```
+Method:POST
+Url:   http://121.42.178.246:8008/api/v1/application/edit_status/
+Body： {'providerId':11,'appid':3,'onlineapply':1} //可选 'materialapply':1,'visaapply':1,'houseticketapply':1
+Response:{'success':ture,'reason':'Application Status Modified!'}
+```
+
+###更改application 除状态外的信息（很少用）
+```
+Method:PUT
+Url:   http://121.42.178.246:8008/api/v1/application/edit_app/
+Body： {'applicationId':3,//其他信息}
+Response:{'success':ture,'reason':'Application Status Modified!'}
+```
