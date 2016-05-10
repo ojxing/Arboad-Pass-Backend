@@ -179,7 +179,7 @@ class ProviderResource(MyModelResource):
         queryset = Provider.objects.all()
         resource_name ='provider'
         authorization = Authorization()
-        # authentication = MultiAuthentication(SessionAuthentication(),ApiKeyAuthentication())
+        authentication = MultiAuthentication(SessionAuthentication(),ApiKeyAuthentication())
         allowed_method =['get','post','put','patch']
         detail_allowed_methods =['get','post','put','patch']
 
@@ -187,8 +187,10 @@ class ProviderResource(MyModelResource):
         return [
             url(r"(?P<resource_name>%s)/edit%s$"%(self._meta.resource_name,trailing_slash()),self.wrap_view('edit_provider_profile'),name="api_edit_provider_profile"),
             url(r"(?P<resource_name>%s)/show%s$"%(self._meta.resource_name,trailing_slash()),self.wrap_view('show_provider_profile'),name="api_show_provider_profile"),
+            url(r"(?P<resource_name>%s)/show_provider%s$"%(self._meta.resource_name,trailing_slash()),self.wrap_view('show_user_provider_profile'),name="api_show_user_provider_profile"),
         ]
 
+    #provider用户编辑自己的profile
     def edit_provider_profile(self,request, **kwargs):
         self.method_check(request,allowed=['post','put'])
         user = request.user
@@ -199,6 +201,7 @@ class ProviderResource(MyModelResource):
 
         return super(ProviderResource,self).put_detail(request,pk=profile.id)
 
+    #provider用户看自己的profile
     def show_provider_profile(self,request,**kwargs):
         user = request.user
         try:
@@ -208,9 +211,29 @@ class ProviderResource(MyModelResource):
         except Provider.DoesNotExist:
             return self.create_response(request,{'success':False,'reason':'Provider Not Existed!'},HttpNotFound)
 
+    def show_user_provider_profile(self,request,**kwargs):
+        self.is_authenticated(request)
+        user = request.user
+        print 'bb' + str(user.id)
+        providerId = request.GET['pid']
+        try:
+            profile = Provider.objects.get(user_id = providerId)
+            if user and not user.is_anonymous():
+                return self.dispatch_detail(request,pk = profile.id)
+        except Provider.DoesNotExist:
+            return self.create_response(request,{'success':False,'reason':'Provider Not Existed!'},HttpNotFound)
+
     def dehydrate(self, bundle):
+        user = bundle.request.user
         bundle.data['username'] = bundle.obj.user
         bundle.data['userid'] = bundle.obj.user.id
+        bundle.data['hasapply'] = False
+        providerId =  bundle.request.GET.get('pid')
+        if providerId!=None:
+            normaluser = NormalUser.objects.get(user_id=user.id)
+            provider = Provider.objects.get(user_id=providerId)
+            if Application.objects.filter(normaluser=normaluser, provider=provider).exists():
+                bundle.data['hasapply'] = True
         return bundle
 
 

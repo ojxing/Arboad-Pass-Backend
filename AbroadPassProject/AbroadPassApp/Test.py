@@ -5,14 +5,14 @@ import json
 #-------------------------------Authentication-------------------------------#
 
 #--------login---------#
-login = 'http://121.42.178.246:8008/api/v1/user/login/'
-data1 = {'username':'ojxing3','password':'abc123'}
-head = {'Content-type':'application/json'}
-r1 = requests.post(login,json.dumps(data1),headers=head)
-apikey = json.loads(r1.content)["api"]
-print(r1.status_code)
-print(r1.content)
-print(r1.cookies['sessionid'])
+# login = 'http://121.42.178.246:8008/api/v1/user/login/'
+# data1 = {'username':'ojxing3','password':'abc123'}
+# head = {'Content-type':'application/json'}
+# r1 = requests.post(login,json.dumps(data1),headers=head)
+# apikey = json.loads(r1.content)["api"]
+# print(r1.status_code)
+# print(r1.content)
+# print(r1.cookies['sessionid'])
 
 #新建申请
 # application = 'http://121.42.178.246:8008/api/v1/application/generate/?username=ojxing3&api_key=a7f83d154c4d5770d5dd0f8cdbf041766d6edfc5'
@@ -55,13 +55,13 @@ print(r1.cookies['sessionid'])
 # print(r.cookies)
 
 #查看申请状态
-application = 'http://121.42.178.246:8008/api/v1/application/get_status/?appid=3&username=ojxing3&api_key=a7f83d154c4d5770d5dd0f8cdbf041766d6edfc5'
-head = {'Content-type':'application/json'}
-#r = requests.post(application,json.dumps(data1),headers=head,cookies={'sessionid':r1.cookies['sessionid'],'csrftoken':r1.cookies['csrftoken']})
-r = requests.get(application,headers=head)
-print(r.status_code)
-print(json.dumps(json.loads(r.content),indent=1))
-print(r.cookies)
+# application = 'http://121.42.178.246:8008/api/v1/application/get_status/?appid=3&username=ojxing3&api_key=a7f83d154c4d5770d5dd0f8cdbf041766d6edfc5'
+# head = {'Content-type':'application/json'}
+# #r = requests.post(application,json.dumps(data1),headers=head,cookies={'sessionid':r1.cookies['sessionid'],'csrftoken':r1.cookies['csrftoken']})
+# r = requests.get(application,headers=head)
+# print(r.status_code)
+# print(json.dumps(json.loads(r.content),indent=1))
+# print(r.cookies)
 
 
 
@@ -100,9 +100,9 @@ print(r.cookies)
 # print(r.cookies)
 
 #---------register---------#
-# reg_url = 'http://localhost:8000/api/v1/user/register/'
+# reg_url = 'http://121.42.178.246:8008/api/v1/user/register/'
 # head = {'Content-type':'application/json'}
-# data = {'username':'ojxing9','password':'abc123','type':'normaluser'}  #type =>  normaluser or provider
+# data = {'username':'ojxing_p2','password':'abc123','type':'provider'}  #type =>  normaluser or provider
 # r = requests.post(reg_url,json.dumps(data),headers=head)
 # print(r.status_code)
 # print(r.content)
@@ -136,12 +136,12 @@ print(r.cookies)
 # print(r.cookies)
 
 #-------provider profile------#
-# provider_profile = 'http://localhost:8000/api/v1/provider/show/'
-# head = {'Content-type':'application/json'}
-# r = requests.get(provider_profile,headers=head,cookies={'sessionid':r1.cookies['sessionid'],'csrftoken':r1.cookies['csrftoken']})
-# print(r.status_code)
-# print(json.dumps(json.loads(r.content),indent=1))
-# print(r.cookies)
+provider_profile = 'http://121.42.178.246:8008/api/v1/provider/show_provider?pid=12&username=ojxing3&api_key=a7f83d154c4d5770d5dd0f8cdbf041766d6edfc5'
+head = {'Content-type':'application/json'}
+r = requests.get(provider_profile,headers=head)
+print(r.status_code)
+print(json.dumps(json.loads(r.content),indent=1))
+print(r.cookies)
 
 #------update provider profile-----#
 # update_provider = 'http://localhost:8000/api/v1/provider/edit/'
