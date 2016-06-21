@@ -16,7 +16,17 @@ import json
 
 #新建申请
 # application = 'http://121.42.178.246:8008/api/v1/application/generate/?username=ojxing3&api_key=a7f83d154c4d5770d5dd0f8cdbf041766d6edfc5'
-# data1 = {'providerId':11}
+# data1 = {'providerId':12,'onlineapply':1,'visaapply':1}
+# head = {'Content-type':'application/json'}
+# #r = requests.post(application,json.dumps(data1),headers=head,cookies={'sessionid':r1.cookies['sessionid'],'csrftoken':r1.cookies['csrftoken']})
+# r = requests.post(application,json.dumps(data1),headers=head)
+# print(r.status_code)
+# print(r.content)
+# print(r.cookies)
+
+#新建状态
+# application = 'http://121.42.178.246:8008/api/v1/application/create_status/?username=ojxing3&api_key=a7f83d154c4d5770d5dd0f8cdbf041766d6edfc5'
+# data1 = {'appId':18,'serviceType':'onlineapply','status_string':'准备网申的东西'}
 # head = {'Content-type':'application/json'}
 # #r = requests.post(application,json.dumps(data1),headers=head,cookies={'sessionid':r1.cookies['sessionid'],'csrftoken':r1.cookies['csrftoken']})
 # r = requests.post(application,json.dumps(data1),headers=head)
@@ -26,7 +36,7 @@ import json
 
 #查询申请
 # application = 'http://121.42.178.246:8008/api/v1/application/hasapply/?username=ojxing3&api_key=a7f83d154c4d5770d5dd0f8cdbf041766d6edfc5'
-# data1 = {'providerId':11}
+# data1 = {'providerId':12}
 # head = {'Content-type':'application/json'}
 # #r = requests.post(application,json.dumps(data1),headers=head,cookies={'sessionid':r1.cookies['sessionid'],'csrftoken':r1.cookies['csrftoken']})
 # r = requests.post(application,json.dumps(data1),headers=head)
@@ -35,18 +45,18 @@ import json
 # print(r.cookies)
 
 #查看申请列表
-# application = 'http://121.42.178.246:8008/api/v1/application/?username=ojxing3&api_key=a7f83d154c4d5770d5dd0f8cdbf041766d6edfc5'
+# application = 'http://121.42.178.246:8008/api/v1/application/list?order_by=-create_time&username=ojxing3&api_key=a7f83d154c4d5770d5dd0f8cdbf041766d6edfc5'
 # data1 = {'providerId':11}
 # head = {'Content-type':'application/json'}
 # #r = requests.post(application,json.dumps(data1),headers=head,cookies={'sessionid':r1.cookies['sessionid'],'csrftoken':r1.cookies['csrftoken']})
-# r = requests.get(application,json.dumps(data1),headers=head)
+# r = requests.get(application,headers=head)
 # print(r.status_code)
 # print(json.dumps(json.loads(r.content),indent=1))
 # print(r.cookies)
 
 #更改申请状态
 # application = 'http://121.42.178.246:8008/api/v1/application/edit_status/?username=ojxing3&api_key=a7f83d154c4d5770d5dd0f8cdbf041766d6edfc5'
-# data1 = {'providerId':11,'appid':3,'onlineapply':3}
+# data1 = {'providerId':2,'appid':18,'onlineapply':0}
 # head = {'Content-type':'application/json'}
 # #r = requests.post(application,json.dumps(data1),headers=head,cookies={'sessionid':r1.cookies['sessionid'],'csrftoken':r1.cookies['csrftoken']})
 # r = requests.post(application,json.dumps(data1),headers=head)
@@ -55,7 +65,15 @@ import json
 # print(r.cookies)
 
 #查看申请状态
-# application = 'http://121.42.178.246:8008/api/v1/application/get_status/?appid=3&username=ojxing3&api_key=a7f83d154c4d5770d5dd0f8cdbf041766d6edfc5'
+application = 'http://121.42.178.246:8008/api/v1/application/get_status/?appid=18&username=ojxing3&api_key=a7f83d154c4d5770d5dd0f8cdbf041766d6edfc5'
+head = {'Content-type':'application/json'}
+#r = requests.post(application,json.dumps(data1),headers=head,cookies={'sessionid':r1.cookies['sessionid'],'csrftoken':r1.cookies['csrftoken']})
+r = requests.get(application,headers=head)
+print(r.status_code)
+print(json.dumps(json.loads(r.content),indent=1))
+print(r.cookies)
+
+# application = 'http://121.42.178.246:8008/api/v1/application/get_status/?appid=3&username=liujiayu&api_key=5a98a977d8dfa8f7975da94299a7a900a1dcfb34'
 # head = {'Content-type':'application/json'}
 # #r = requests.post(application,json.dumps(data1),headers=head,cookies={'sessionid':r1.cookies['sessionid'],'csrftoken':r1.cookies['csrftoken']})
 # r = requests.get(application,headers=head)
@@ -63,11 +81,9 @@ import json
 # print(json.dumps(json.loads(r.content),indent=1))
 # print(r.cookies)
 
-
-
 #更改申请状态
-# application = 'http://121.42.178.246:8008/api/v1/application/edit_status/?username=ojxing2&api_key=557b28e27e7b0219f00f8c2ba1024b57148da0b9'
-# data1 = {'applicationId':3,'cvapply_status':0}
+# application = 'http://121.42.178.246:8008/api/v1/application/edit_app/?username=ojxing2&api_key=557b28e27e7b0219f00f8c2ba1024b57148da0b9'
+# data1 = {'applicationId':15,'is_read':True}
 # head = {'Content-type':'application/json'}
 # r = requests.put(application,json.dumps(data1),headers=head)
 
@@ -82,11 +98,11 @@ import json
 # print(r.content)
 # print(r.cookies)
 
-# article = 'http://121.42.178.246:8008/api/v1/article/list/'
+# article = 'http://121.42.178.246:8008/api/v1/article/list/?username=ojxing3&api_key=a7f83d154c4d5770d5dd0f8cdbf041766d6edfc5'
 # data1 = {'content':'abctest','read':15}
 # head = {'Content-type':'application/json'}
-# #r = requests.get(article,json.dumps(data1),headers=head,cookies={'sessionid':r1.cookies['sessionid'],'csrftoken':r1.cookies['csrftoken']})
-# r = requests.post(article,json.dumps(data1),headers=head)
+# #r = requests.get(article,json.dumps(data1),headers=head)
+# r = requests.get(article,json.dumps(data1),headers=head)
 # print(r.status_code)
 # print(r.content)
 # print(r.cookies)
@@ -136,12 +152,12 @@ import json
 # print(r.cookies)
 
 #-------provider profile------#
-provider_profile = 'http://121.42.178.246:8008/api/v1/provider/show_provider?pid=12&username=ojxing3&api_key=a7f83d154c4d5770d5dd0f8cdbf041766d6edfc5'
-head = {'Content-type':'application/json'}
-r = requests.get(provider_profile,headers=head)
-print(r.status_code)
-print(json.dumps(json.loads(r.content),indent=1))
-print(r.cookies)
+# provider_profile = 'http://121.42.178.246:8008/api/v1/provider/show_provider?pid=12&username=ojxing3&api_key=a7f83d154c4d5770d5dd0f8cdbf041766d6edfc5'
+# head = {'Content-type':'application/json'}
+# r = requests.get(provider_profile,headers=head)
+# print(r.status_code)
+# print(json.dumps(json.loads(r.content),indent=1))
+# print(r.cookies)
 
 #------update provider profile-----#
 # update_provider = 'http://localhost:8000/api/v1/provider/edit/'

@@ -5,6 +5,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from tastypie.utils.timezone import now
+import json
 # Create your models here.
 
 class Grade(models.Model):
@@ -76,6 +77,10 @@ class OnlineApply(models.Model):
    username = models.CharField(max_length=50)
    password = models.CharField(max_length=50)
    status = models.IntegerField(default=0)  # 0: false, 1: create(, 2: approve)
+   process = models.IntegerField(default=-1)
+   def to_JSON(self):
+       return json.dumps(self, default=lambda o: o.__dict__, 
+            sort_keys=True, indent=4)
 class MaterialApply(models.Model):
    cv = models.FileField(upload_to="/Material/CV")
    ps = models.FileField(upload_to="/Material/PS")
@@ -88,29 +93,34 @@ class MaterialApply(models.Model):
    recommend_letter3_status = models.IntegerField(default=0)
    cv_status = models.IntegerField(default=0)
    ps_status = models.IntegerField(default=0)
+   process = models.IntegerField(default=-1)
 
 class VisaApply(models.Model):
    create_time = models.DateTimeField(auto_now_add=True)
+   process = models.IntegerField(default=-1)
    status = models.IntegerField(default=0)  # 0: false, 1: create(, 2: approve)
 
 class HouseAndTicketApply(models.Model):
    create_time = models.DateTimeField(auto_now_add=True)
+   process = models.IntegerField(default=-1)
    status = models.IntegerField(default=0)  # 0: false, 1: create(, 2: approve)
 
 class Application(models.Model):
    normaluser = models.ForeignKey(NormalUser,related_name='application')
    provider= models.ForeignKey(Provider,related_name='application')
-   onlineapply = models.OneToOneField(OnlineApply,related_name='application')
-   materialapply = models.OneToOneField(MaterialApply,related_name='application')
-   visaapply = models.OneToOneField(VisaApply,related_name='application')
-   houseticketapply = models.OneToOneField(HouseAndTicketApply,related_name='application')
+   onlineapply = models.OneToOneField(OnlineApply,related_name='application',null=True)
+   materialapply = models.OneToOneField(MaterialApply,related_name='application',null=True)
+   visaapply = models.OneToOneField(VisaApply,related_name='application',null=True)
+   houseticketapply = models.OneToOneField(HouseAndTicketApply,related_name='application',null=True)
    app_status = models.IntegerField(default=0)
-   onlineapply_status = models.IntegerField(default=0)
-   cvapply_status = models.IntegerField(default=0)
-   hardmaterialapply_status = models.IntegerField(default=0)
-   visaapply_status = models.IntegerField(default=0)
-   houseticketapply_status = models.IntegerField(default=0)
    create_time = models.DateTimeField(auto_now_add=True)
+   is_read = models.BooleanField(default = False)
+
+class Status(models.Model):
+   application = models.ForeignKey(Application,related_name='status',null=True)
+   serviceType = models.CharField(max_length=20,default="")
+   update_time = models.DateTimeField(auto_now_add=True)
+   status_string = models.CharField(max_length=100,default="")
 
 class Article(models.Model):
     provider = models.ForeignKey(Provider)
