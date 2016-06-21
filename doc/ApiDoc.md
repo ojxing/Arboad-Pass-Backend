@@ -184,3 +184,20 @@ Method:GET
 Url:   http://121.42.178.246:8008/api/v1/provider/show_provider/?pid=12
 Response:{'success':ture,} Provider Information  备注：其中hasapply 显示当前用户与该Provider是否有application
 ```
+
+##----------------------------------6/21号更新-----------------
+
+增加create_status 接口<br/>
+修改get_status 接口
+
+###增加create_status
+provider 填写状态，每次都增加一条记录
+```
+Method:POST
+Url:   http://121.42.178.246:8008/api/v1/application/create_status/
+Body： {'appId':18,'serviceType':'onlineapply','status_string':'准备网申的东西'} //serviceType为以下四种之一【'onlineapply','materialapply','visaapply','houseticketapply'】
+Response:{'success':ture,'reason':'Create Status Success!'}
+```
+
+###修改get_status
+get_status接口返回增加 显示provider定义的状态 比如 OnlineApplyStatus ，按添加时间倒序排列
