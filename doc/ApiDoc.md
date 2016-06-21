@@ -176,3 +176,11 @@ Url:   http://121.42.178.246:8008/api/v1/application/edit_app/
 Body： {'applicationId':3,//其他信息}
 Response:{'success':ture,'reason':'Application Status Modified!'}
 ```
+
+###补充 查询Provider（附带user 与该Provider有无application）
+###（用户角度点开Provider, 上面的/provider/show是Provider登录进去看自己的profile）
+```
+Method:GET
+Url:   http://121.42.178.246:8008/api/v1/provider/show_provider/?pid=12
+Response:{'success':ture,} Provider Information  备注：其中hasapply 显示当前用户与该Provider是否有application
+```
